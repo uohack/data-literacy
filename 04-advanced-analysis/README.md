@@ -17,7 +17,7 @@ By the end of this course you should:
 
 **Note:** If you do not want to or are not able to actively participate in this course, that is totally fine. I created this course to show you want is possible, not as a step-by-step guide to learning pandas. That said, there are two ways to proceed:
 
-1. You may follow along through the example using a notebook I created and is served by Github [here](). For those of you not familiar with command line, this is strongly encouraged. Pleae do read through the whole course, but do not feel discouraged if you do not fully understand what's going on.
+1. You may follow along through the example using a notebook I created and is served by Github [here](https://github.com/uohack/data-literacy/blob/master/04-advanced-analysis/parking.ipynb). For those of you not familiar with command line, this is strongly encouraged. Pleae do read through the whole course, but do not feel discouraged if you do not fully understand what's going on.
 1. For those of you with command line experience, or the brave, I have place enough information below to push you in the right direction. But I do not explain every step from zero to working in a Jupyter notebook. You will need to do some outside reading to get your computer up to speed. I would recommend you go through the tutorial once, reading the notebook via Github (option one) and then come back and try to do it yourself later.
 
 ## Background
@@ -73,7 +73,7 @@ At this point your computer should open up a fresh Jupyter interface in your def
 
 ## Into the notebook
 
-From here on out, I will be walking you through an associated Jupyter notebook. You can view a full, pre-populated notebook [here]() if you are not setting up a notebook on your own computer.
+From here on out, I will be walking you through an associated Jupyter notebook. You can view a full, pre-populated notebook [here](https://github.com/uohack/data-literacy/blob/master/04-advanced-analysis/parking.ipynb) if you are not setting up a notebook on your own computer.
 
 First things first, we need to import pandas so that we can work on it.
 
@@ -81,9 +81,7 @@ Next, we want to "read" the data from the CSV into a pandas data frame. A data f
 
 After we import the data we want to take a look at it and see what we're working with. To get a snapshot of the data you can use the `.info()` method. This will return useful information like the number of entries in the data frame, column names and column types.
 
-Next, to get a spreadsheet-like look at the data you can use the `.head(15)` method to see the first 15 rows.
-
-This tells us that the ISSUE TIME is formatted to a 24-hour clock, as well as giving us an insight into how some of the other data is formatted.
+We won't do it here but you could also do the `.head()` method, which would print out the first five rows.
 
 You can also run `.describe()` which tells us the following:
 
@@ -97,7 +95,7 @@ All of that information gives us a great introduction to this data set. But it c
 
 ### Modifying data
 
-It's clear from the `.head()` that there is data from outside FY15-16, which is what we expected. But we don't know the range of the dates. To better work with this column, let's convert the values, which are plain text, into datetime objects. We know that this column is plain text becuase back in `.info()` the data type was a regular old 'object'. After we convert the column to datetime, we'll be able to do all sorts of analysis based on the date.
+Remember, there is data from outside FY15-16, but we don't know the exact range of the dates. To better work with this column, let's convert the values, which are plain text, into datetime objects. We know that this column is plain text becuase back in `.info()` the data type was a regular old 'object'. After we convert the column to datetime, we'll be able to do all sorts of analysis based on the date.
 
 To to this we use a pandas method called `to_datetime()` to convert that column into datetime. This may take a second, we have more than 30,000 rows after all.
 

@@ -63,11 +63,11 @@ Because the files is just text, it is the lowest-common denominator for any data
 
 **Note:** The data I have pulled for this example is accurate, as of May 26, 2017, but has been modified for instructional purposes. You can find up to date data from OLCC [here](http://www.oregon.gov/olcc/marijuana/Documents/Approved_Retail_Licenses.xlsx). Any changes do not matter for the sake of this example.
 
-Please download [this CSV] of my modified data.
+Please download [this CSV](https://raw.githubusercontent.com/uohack/data-literacy/master/01-getting-started/lane-pot.csv) of my modified data.
 
 You will also need a [text editor](https://www.maxmasnick.com/2015/08/12/real-text-editor/). A text editor allows you to open text files (like CSVs) in the raw text format. This is important because you can know immediately if the data is corrupt and learn a little about the data structure. Text editors differ from word processors that you may be familiar with, in that they only deal with plain text, not formatted text. If you don't have a text editor installed, I suggest downloading [SublimeText](https://www.sublimetext.com/).
 
-Now that you have a text editor installed and the CSV file downloaded, open it up in the text editor. You should see something like this:
+Now that you have a text editor installed and the [CSV file](https://raw.githubusercontent.com/uohack/data-literacy/master/01-getting-started/lane-pot.csv) downloaded, open it up in the text editor. You should see something like this:
 
 ```csv
 TRADE NAME,POSTAL CITY,COUNTY,STREET ADDRESS,ZIP,Notes

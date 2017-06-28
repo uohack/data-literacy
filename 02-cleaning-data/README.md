@@ -81,7 +81,7 @@ I want to spend the majority of this course in an example that exemplifies many 
 
 ## Example
 
-**Scenario:** You're a reporter looking at the proposed [City of Eugene budget](https://www.eugene-or.gov/DocumentCenter/View/32021) for fiscal year 2018. On page 56/62 you find a breakdown of the budget by department, a helpful snapshot of how the city spends money. Your task it to double check their math and get a sense of the city's priorities moving into the new budget year. This includes looking at what departments get the most and least money, and what departments are getting small and large budget increases.
+**Scenario:** You're a reporter looking at the proposed [City of Eugene budget](https://github.com/uohack/data-literacy/raw/master/02-cleaning-data/FY18_proposed_budget.pdf) for fiscal year 2018. On page 56/62 you find a breakdown of the budget by department, a helpful snapshot of how the city spends money. Your task it to double check their math and get a sense of the city's priorities moving into the new budget year. This includes looking at what departments get the most and least money, and what departments are getting small and large budget increases.
 
 **Note:** This proposed budget was downloaded in June 2017 and may have changed. Any changes do not matter for the sake of this example.
 
