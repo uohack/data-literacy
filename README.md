@@ -65,9 +65,8 @@ Let's get started.
   * Types of data visualizations
   * **Example:** Query federal data and create map
 * 04 - Advanced analysis
-  * Basics of programming
-  * Using Python to analyze data
-  * Example: Examine campus parking citations using Pandas
+  * Use Python pandas to analyze data
+  * **Example:** Examine campus parking citations using Pandas
 
 ## Recommended reading
 
