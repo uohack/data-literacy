@@ -11,12 +11,12 @@ In the last course we looked at the following basic data work flow:
 
 The truth of the matter is that cleaning the data usually takes up the vast majority of your time. This time spent cleaning leads to better understanding and important insights.
 
-In this course I'm going to go over ways to work with data in a spreadsheet and some more advanced methods of cleaning. We'll also go through an example where you have to go get data out of a PDF, do some math to check the numbers and create some basic graphs.
+In this course I'm going to go over ways to work with data in a spreadsheet and some more advanced methods of cleaning. We'll also go through an example where you have to go get data out of a PDF, do some math to check the numbers and at the end we'll create a simple graph.
 
 By the end of this course you should:
 
 * Understand basic spreadsheet formulas
-* Know the formula for percent change
+* Know the formula for percent change by heart
 * Have a decent understanding of how to transfer data from a native PDF to a spreadsheet
 * Know how to add data columns to your set and populate them using spreadsheet formulas
 * Begin to visualize data using Google charts
@@ -28,20 +28,23 @@ Let's get started.
 The great thing about digital spreadsheets is that they offer a number of powerful mathematical and programmatic functions to help you work with data. Here are a few useful formulas:
 
 ```
+# Adding
 =SUM(A1:A5)
-# Adds the numerical values of A1, A2, A3, A4 and A5
+### Adds the numerical values of A1, A2, A3, A4 and A5
 
+# Conditional statements
 =IF(A1>A2,"One is bigger","Two is bigger")
-# Conditional IF test
-# For example, given:
-# A1 = 5 and A2 = 7 the cell would display:
-# Two is bigger
+### Conditional IF test
+### For example, given:
+### A1 = 5 and A2 = 7 the cell would display:
+### Two is bigger
 
+# Concatenation
 =CONCATENATION(B2,": ",B3)
-# Concatenate multiple strings
-# For example, given:
-# B2 = "Monday" and B3 = "Weekday" would display:
-# Monday: Weekday
+### Concatenate multiple strings
+### For example, given:
+### B2 = "Monday" and B3 = "Weekday" would display:
+### Monday: Weekday
 ```
 
 You can also combine formulas like this simple example:
@@ -58,26 +61,37 @@ You can also combine formulas like this simple example:
 # Did NOT make quota
 ```
 
-These are simplistic examples but offer a lot of leverage when working with data. Simple things like percentages or percent change ((N-O)/O) and more complex things like concatenating street addresses or creating new data with conditionals can be easily accomplished in spreadsheets.
+These are simplistic examples but offer a lot of leverage when working with data.
+
+Simple things like percentages or percent change ((N-O)/O) and more complex things like concatenating street addresses or creating new data with conditionals can be easily accomplished in spreadsheets.
 
 ### Percent change
 
 Matt Waite, a journalism instructor at the University of Nebraska, tells his students that they can't graduate until they [prove to him](https://twitter.com/ACRStriker9/status/861642695390965762) that they have memorized the formula for percent change.
 
-[Percent change](https://www.youtube.com/watch?v=uxMr5sEjIJI) is a simple and important formula for anyone to know, especially those working with data. You (*yes, you*) should know this. Here is the formula and an example:
+[Percent change](https://www.youtube.com/watch?v=uxMr5sEjIJI) is a simple and important formula for anyone to know, especially those working with data. You (*yes, you*) should know this by heart. Here is the formula and an example:
 
 ```
 (New value - Old value) / Old value
 
-Last month you had $132,638 in sales. This month you had $145,689 in sales. What's the percent change?
+# Simple example
+### You had 10 apples and now you have 5, what is the percent change?
+(N-O)/O
+(5-10)/10
+-5/10
+-0.5 = -50%
+### This makes since because 5 apples is 50% less than 10 apples.
 
+# Real-world example
+### Last month you had $132,638 in sales. This month you had $145,689 in sales. ### What's the percent change?
 (N-O)/O
 ($145,689-$132,638)/$132,638
 $13,051/$132,638
 9.84% growth
+### This makes sense because your sales increased, but not by a ton.
 ```
 
-I want to spend the majority of this course in an example that exemplifies many different methods of cleaning data, so let's move into that.
+I want to spend the majority of this course in an example that shows many different methods of cleaning data, so let's move into that.
 
 ## Example
 
@@ -91,7 +105,7 @@ Go ahead and crack that budget PDF open and find page 56/62. There is a table la
 
 There are several types of PDFs, but for the purposes of this course I'm going to oversimplify to just two types: native and scanned. Scanned PDFs are effectively flat images where text cannot be copied. There are a number of OCR programs that try to retrieve text from these images, but nothing is perfect.
 
-Native PDFs, on the other hand, offer fairly easy copying of any text information. This means that most tables or spreadsheets are extractable. The PDF in this example is native so we should absolutely try to copy and paste the table into an empty Google Sheet.
+Native PDFs, on the other hand, offer fairly easy copying of any text information. This means that most tables or spreadsheets are extractable. The PDF in this example is native so we should try to copy and paste the table into an empty Google Sheet.
 
 **Pro tip:** The way that Google Chrome renders PDFs make them copy and paste easier than Apple's Preview application.
 
@@ -101,7 +115,7 @@ So let's give it a go. Hey, it works! Kind of...
 
 We need to clean that up a little bit. You have two options. The first is to keep the data in the spreadsheet and do manual cleaning using copy and pasting. The threat of introducing errors is pretty low because it's a fairly small data set and it's easy to double check your work.
 
-The second option is to copy/paste the data into a text editor and format the data in there. If you utilize [regular expressions](http://www.hongkiat.com/blog/getting-started-with-regex/) and find and replace then this can be quicker than manual data editing. Unfortunately, regular expressions have a fairly steep learning curve so this is not a great venue to teach that.
+The second option is to copy/paste the data into a text editor and format the data in there. If you utilize [regular expressions](http://www.hongkiat.com/blog/getting-started-with-regex/), as well as find and replace then this can be quicker than manual data editing. Unfortunately, regular expressions have a fairly steep learning curve so this is not a great venue to teach that.
 
 We'll continue with manual data editing in the spreadsheet.
 
@@ -133,16 +147,17 @@ Another good metric is to see what the actual value is as a percent of the total
 
 In a new column, let's divide the FY18 budget by the total to get a sense of scale with the percent of total. You can drag down the formula like we did before.
 
+![percent of total error](https://user-images.githubusercontent.com/4853944/28104867-ee0a4fa4-6691-11e7-9a83-bad342f99064.png)
 
-![pertot](https://user-images.githubusercontent.com/4853944/27020081-e9038676-4ef2-11e7-8b24-2d094736bd82.gif)
 
 Uh oh. That's not good. What's wrong? Well, when we drag down the formula to apply it to the cells below, the cells in the formula are changed as well. You can see that the formula for F2 is C2/C8 and F3 is C3/C9, but it should be C3/C8. We need to "lock" in C8 in the formula. This can be accomplished with a dollar sign, like so: `=(C2/C$8)`.
 
-![pertot2](https://user-images.githubusercontent.com/4853944/27020179-dd6858b8-4ef3-11e7-8f89-296b35e28c30.gif)
+![percent of total corrected](https://user-images.githubusercontent.com/4853944/28104918-28dcd354-6692-11e7-86fa-46273546e639.png)
+
 
 This adds some context, but one thing we haven't looked at is the actual dollar value change from one year to the next. Let's solve for that with simple subtraction of B from C.
 
-![diff](https://user-images.githubusercontent.com/4853944/27020237-42eb2486-4ef4-11e7-8aae-bfe1641bcc1d.gif)
+![Change in dollars](https://user-images.githubusercontent.com/4853944/28104948-4e6cc4ee-6692-11e7-939f-ff36d825d267.png)
 
 This is interesting because Police has the smallest percentage increase (4%) but it has the largest total dollar increase ($2,027,321). At the same time, the highest percent change (11%) of Planning & Development has the second smallest total dollar increase ($704,712).
 
@@ -157,7 +172,7 @@ Let's take a step back and see what we've learned:
 
 Now that we have the budget analyzed, where do we go from here? Well, there are a number of story ideas above and we're still at the highest possible level of this budget proposal. You could dig deeper into any (or all) of the department budgets.
 
-But before we get to that, let's visualize some of this data.
+We won't go any further with the analysis. Instead, we'll turn to basic data visualization with bar graphs.
 
 ### Simple viz
 
@@ -177,9 +192,9 @@ From here, select A1 and go Insert > Chart. It should create a bar chart by defa
 
 What do we learn from this? Well, it confirms what we found about the Police budget increase being the largest by a huge margin. It also shows how small the Public Works and Planning & Development increases are.
 
-I should note that these charts can be stylized and exported as an image or interactive embed. Designers will be disappointed, however, at the lack of options and it's tough to add any brand identity.
+I should note that these charts can be stylized and exported as an image or interactive embed. Designers will be disappointed, however, at the lack of options.
 
-You can copy this method and apply it to the other values to see charts of those columns as well.
+You can copy this process and apply it to the other columns to see charts of those columns as well.
 
 ## Wrap up
 

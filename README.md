@@ -4,21 +4,27 @@ This is a web write-up for four courses to be given fall 2017 for UOHack. Conten
 
 ## Introduction
 
-Data is everywhere.
+#### Data is everywhere.
 
 We interact with data everyday in thousands of ways and data literacy is seldom taught in schools. No matter the industry you wish to enter, no matter what it is you want to do with your life, data will be a part of it.
 
-To be sure, data is nothing new. But recently, processing data has become extremely cheap. It used to be that accountants had large [spreadsheets](http://www.npr.org/sections/money/2015/02/25/389027988/episode-606-spreadsheets) laid out over big desks and counted numbers by hand. If one cell changed, it might take a day or more to update the rest of the sheet.
+#### Data is certainly nothing new.
 
-Now, computers can not only render changes to a spreadsheet instantaneously, but they can process thousands of data points in near-real time and give you complex analysis as the data changes.
+But recently, processing data has become extremely cheap and efficient. More than 30 years ago, accountants had large [spreadsheets](http://www.npr.org/sections/money/2015/02/25/389027988/episode-606-spreadsheets) laid out over big desks and counted numbers by hand. If one cell changed, it might take a day or more to update the rest of the sheet.
 
-To emphasize the point that data has become an extremely important concept to learn about, not just in America but around the world, let's look at some data on the concept of data.
+Now computers can render changes to a spreadsheet instantaneously and process thousands of data points in near-real time to give you complex analysis as the data changes.
+
+#### Everyone should learn basic data literacy skills.
+
+To emphasize the point that data has become an extremely important concept to learn about, not just in America but around the world, let's look at some data.
 
 I did a few quick Google searches to see how influential three key phrases are on the internet, as a rough snapshot of their overall popularity. The following information was gathered in June 2017.
 
-First, I tried searching for the phrase [university of oregon](https://www.google.com/search?q=university+of+oregon), which returned 124 million results. Not bad, but let's expand that a little to a world-wide topic like [football](https://www.google.com/search?q=football), which returns 1.4 billion results (11 times higher than university of oregon).
+First, I tried searching for the phrase [`university of oregon`](https://www.google.com/search?q=university+of+oregon), which returned 124 million results. Not bad, but let's expand that a little to a world-wide topic like [`football`](https://www.google.com/search?q=football), which returns 1.4 billion results (11 times higher than `university of oregon`).
 
-Now, let's try the word [data](https://www.google.com/search?q=data). This returns 5.6 billion results, four times more than football. These numbers a big and can seem fuzzy when compared anecdotally. Let's look at them in two other ways. First, as a table:
+Now, let's try the word [`data`](https://www.google.com/search?q=data). This returns 5.6 billion results, four times more than `football` and 45 times more than `university of oregon`.
+
+These numbers are big and can seem fuzzy when compared anecdotally. Let's look at them in two other ways. First, as a table:
 
 | term | results |
 | :--- | ---: |
@@ -32,21 +38,19 @@ Since this is a small, simple data set, seeing the figures in a table can help p
 
 This simple chart, made in Google Sheets, gives the reader an additional way to compare the numbers.
 
-No matter who you are, or what you do with your life, data will be ever-present.
+#### Data literacy is a skill that can be learned and should be practiced.
 
-Companies big and small, from Amazon to your local newspaper, are trying to leverage data to make better business decisions and share information with the public. In this process, data has interwoven itself into all of our lives.
+No matter who you are, or what you do with your life, data will be present. Whether you decide to interact with it or not is up to you.
 
-So, let's learn how to work with data.
+## Course overview
 
-## Getting started
-
-This is a four-course introduction to data starting from zero. No prior knowledge is required.
+This is a four-course introduction on data literacy. We will start from zero, with no prior knowledge required, and work our way up to advanced data analysis using Python.
 
 **My goal is to introduce you to these topics and give you the tools to begin working with data.** You will see several examples, all of which use real-world data, and learn different techniques to work with the various types of information.
 
 Like learning anything else, you will need to practice these skills in order to get better. Unfortunately, this takes time and effort. But if you pay attention to these four courses, you will be equipped with a solid foundation to tackle any data set.
 
-Let's get started.
+Let's get going.
 
 ## Course list
 
@@ -70,7 +74,7 @@ Let's get started.
 
 ## Recommended reading
 
-Of course this is a very short introduction to a massive world of information. Here are some additional resources depending on what you're interested in.
+Of course, this is a very short introduction to a massive world of information. Here are some additional resources depending on what you're interested in.
 
 * [Data journalism handbook](http://datajournalismhandbook.org/) (220 pages print, free online)
 * [Map types and data types](http://www.geog.ucsb.edu/~kclarke/Geography183/Lecture06.pdf) - UC Santa Barbara (PowerPoint lecture notes)

@@ -9,13 +9,11 @@ As we start every course, here is a simple work flow for basic data analysis.
 * Analyze data
 * Present (or share) data
 
-Often, the majority of time doing data analysis is spent cleaning data, however just as much care should be put into sharing data. After all, your goal is to gain an understanding of the data set and provide a comprehensive and easily-understandable explanation of your findings.
+The majority of time doing data analysis is spent cleaning data, but just as much care should be put into sharing data. After all, your goal is to gain an understanding of the data set and provide a comprehensive and easily-understandable explanation of your findings.
 
-There are many different ways to share that information, but only some of them (and sometimes none of them) apply to certain situations.
+You don't want a complicated visualization but you don't want to dumb down the data either. It takes a bit of tact and sometimes a good editor to help you distill thousands of data points into an easy-to-understand graphic.
 
-You don't want your visualization overly complicated and you don't want to dumb down the data either. It takes a bit of tact and sometimes a good editor to help you distill thousands of data points into an easy-to-understand graphic.
-
-All this is to say, use caution when sharing data. It's easy to inadvertently mislead your audience with a bad axis scale or lazy maps. Data visualizations are a powerful tool to share information.
+All this is to say, use caution when sharing data. It's easy to inadvertently mislead your audience with a bad axis scale or lazy maps. Data visualizations are a powerful tool to share information, use care when creating them.
 
 By the end of this course you should be familiar with:
 
@@ -26,7 +24,7 @@ By the end of this course you should be familiar with:
 
 ## Be open
 
-Working with data can be fraught with pitfalls. One great way to avoid issues is to be completely transparent with your data. In addition to any visualizations or a story citing a data set, go ahead and make the whole data set public. Add a link to download the full CSV with your other analysis.
+Working with data can be fraught with pitfalls. One great way to avoid issues is to be completely transparent with your data. In addition to any visualizations or a story citing a data set, go ahead and make the whole data set public. You can also add a link to download the full CSV with your other analysis.
 
 > “We often will embed our data onto our site in a visualization and in a form that allows for easy download of the dataset. Our readers can explore the data behind the stories through interacting in the visualization or using the data themselves in other ways. Why is this important? It increases the transparency of The Seattle Times. We are showing the readers the same data that we used to draw powerful conclusions. And who uses it? Our critics for sure, as well as those just interested in the story and all of its ramifications. By making the data available we also can enlist tips from these same critics and general readers on what we may have missed and what more we could explore — all valuable in the pursuit of journalism that matters.”
 — Cheryl Phillips (The Seattle Times), taken from [The Data Journalism Handbook](http://datajournalismhandbook.org/1.0/en/delivering_data_0.html#_publishing_the_data)
@@ -41,7 +39,7 @@ Beyond simple transparency, there are a number of additional ways to share infor
 
 Bar charts are great for showing comparison between different measures of the same value. For instance, a city's revenue over multiple years, or sales figures on different products.
 
-This type of graph is the workhorse of data visualizations. More times than not, complex or fancy visualizations could be presented as a bar graph and be just as good, if not better. Remember, your goal is to analyze the data and present it to an audience so that they can understand it quickly. Bar graphs are very logical and easy to understand by everyone.
+This type of graph is the workhorse of data visualizations. More times than not, complex or fancy visualizations could be presented as a bar graph and be just as good, if not better. Remember, your goal is to analyze the data and present it to an audience so that they can understand it quickly. Bar graphs are very logical and easy to understand by almost everyone.
 
 **Side note: Mind your scales.** Always set your y-axis scale to start at zero. Some graphing programs will change the axis so that it zooms in on the data area. This can be misleading. Remember your goal is to accurately represent the data, not provide a sensational graphic. Below are two examples of the same data. In the first, it appears as if the third value is several times as large as the first two, when, in reality, they are quite similar.
 
@@ -85,9 +83,11 @@ Remember, your goal is to simplify and share the data, so don't include too many
 
 ## Mapping
 
-If you have data tied to a geography, you may want to map it. This process can be much more difficult than other data visualization methods. For starters, there are a lot of different types of maps. Single point maps, where you are simply plotting points based on latitude and longitude, are far simpler than heat maps.
+If you have data tied to a geography, you may want to map it. This process can be much more difficult than other data visualization methods. For starters, there are a lot of different types of maps.
 
-A word of caution: Maps can be deceptive. The classic example is county election maps. In fact, a [University of Michigan professor](http://www-personal.umich.edu/~mejn/election/2016/) addressed the issue after the 2012 and 2016 presidential elections. The two maps below represent the same data. If you ever want to map election data, I urge you to read his report [here](http://www-personal.umich.edu/~mejn/election/2016/).
+An example is single point maps, where you are simply plotting points based on latitude and longitude, are far simpler than heat maps.
+
+A word of caution: Maps can be deceptive. The classic example is county election maps. In fact, a [University of Michigan professor](http://www-personal.umich.edu/~mejn/election/2016/) addressed this issue after the 2012 and 2016 presidential elections. The two maps below represent the same data. If you ever want to map election data, I urge you to read his report [here](http://www-personal.umich.edu/~mejn/election/2016/).
 
 ![screen shot 2017-06-12 at 10 02 12 pm](https://user-images.githubusercontent.com/4853944/27066696-d5f39008-4fba-11e7-8363-679f61a0dacf.png)
 
@@ -129,15 +129,15 @@ In two queries we've gone from more than 10,000 rows down to 30. But we can simp
 
 **Pause:** Wait, 25,000 what?
 
-If you go back over to help and select the question mark bubble next to NID_storage you'll see that dam storage is measured in acre-feet. That's good to know but it doesn't help me visualize how much water that is. Let's try [converting 25,000 acre-feet into gallons](https://www.google.com/search?q=25000+acre+feet+to+gallons). We find out that's 8.15x10^<sup>9</sup> gallons, which is a lot of water.
+If you go back over to the Help tab and select the question mark bubble next to NID_storage you'll see that dam storage is measured in acre-feet. That's good to know but it doesn't help me visualize how much water that is. Let's try [converting 25,000 acre-feet into gallons](https://www.google.com/search?q=25000+acre+feet+to+gallons). We find out that's 8.15x10^<sup>9</sup> gallons. That is a lot of water.
 
 **Resume:** Ok, let's take a look at what we've go now.
 
-Back in the query table it looks like the dams I want but there's all this extra info that I don't need right now. And, more importantly, we're missing latitude and longitude, which we need for mapping. Go back to Actions > Select Columns. Feel free to drop any columns you don't need and add any that are of interest. Apply your changes.
+Back in the query table it looks like the dams I want but there's all this extra info that I don't need right now. And, more importantly, we're missing latitude and longitude, which we need for mapping. Go back to Actions > Select Columns. Feel free to drop any columns you don't need and add any that are of interest, including latitude and longitude. Apply your changes.
 
 Now we have a data set we can do something with. But how do we export our information? There doesn't seem to be any button that says "Download CSV," although that would be nice.
 
-However, it does look like it's in some sort of web table format. Let's try to just copy and paste it into an empty Google Sheet. It's so simple it just might work.
+It does look like it's in some sort of web table format. Let's try to just copy and paste it into an empty Google Sheet. It's so simple it just might work.
 
 ![nid](https://user-images.githubusercontent.com/4853944/27067582-76917a02-4fc0-11e7-9c3b-3816a904674f.gif)
 
@@ -159,7 +159,7 @@ Fusion Tables lets your preview your data next, but there shouldn't be any surpr
 
 **Side note:** This is a fairly small data set but you can import up to 250MB of data. Because CSVs are such simple file formats, you can pack a ton of data into 250MB.
 
-If you do not have Latitude and Longitude, Google can geocode addresses for you but it's not always perfect. Since we have have those values, Fusion Tables has automatically created a Map tab for us. Click on it and you will see our nine dams plotted on a Google Map! Pretty easy right?
+If you do not have Latitude and Longitude, Google can geocode addresses for you but it's not always perfect. Since we have those specific values, Fusion Tables has automatically created a Map tab for us. Click on it and you will see our nine dams plotted on a Google Map! Pretty easy right?
 
 ![basic map](https://user-images.githubusercontent.com/4853944/27621371-37c79d44-5b85-11e7-93b4-79ab688c04d5.png)
 
