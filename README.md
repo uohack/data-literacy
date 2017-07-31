@@ -48,7 +48,7 @@ This is a four-course introduction on data literacy. We will start from zero, wi
 
 **My goal is to introduce you to these topics and give you the tools to begin working with data.** You will see several examples, all of which use real-world data, and learn different techniques to work with the various types of information.
 
-Like learning anything else, you will need to practice these skills in order to get better. Unfortunately, this takes time and effort. But if you pay attention to these four courses, you will be equipped with a solid foundation to tackle any data set.
+Like learning anything else, you will need to practice in order to get better. Unfortunately, this takes time and effort. Fortunately, the tools are largely open-source and free and with computers, the feedback is near immediate. But if you pay attention to these four courses, you will be equipped with a solid foundation to tackle any data set.
 
 Let's get going.
 
@@ -79,6 +79,6 @@ Of course, this is a very short introduction to a massive world of information. 
 * [Data journalism handbook](http://datajournalismhandbook.org/) (220 pages print, free online)
 * [Map types and data types](http://www.geog.ucsb.edu/~kclarke/Geography183/Lecture06.pdf) - UC Santa Barbara (PowerPoint lecture notes)
 * [There Are Many Ways to Map Election
-Results. We’ve Tried Most of Them.](https://www.nytimes.com/interactive/2016/11/01/upshot/many-ways-to-map-election-results.html) - New York Times (article)
-[Election maps](http://www-personal.umich.edu/~mejn/election/2016/) - Mark Newman, Department of Physics and Center for the Study of Complex Systems, University of Michigan (short paper)
+Results. We’ve Tried Most of Them.](https://www.nytimes.com/interactive/2016/11/01/upshot/many-ways-to-map-election-results.html) - New York Times (article)  
+    * [Election maps](http://www-personal.umich.edu/~mejn/election/2016/) - Mark Newman, Department of Physics and Center for the Study of Complex Systems, University of Michigan (short paper)
 * [First Python Notebook](http://www.firstpythonnotebook.org/index.html) (getting started with Jupyter and Pandas) - Ben Welsh, LA Times Data Desk editor
