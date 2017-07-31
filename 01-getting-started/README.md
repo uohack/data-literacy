@@ -35,8 +35,7 @@ After acquiring data, your goal should be to get that data into a tabular format
 For example, if the data is coming out of a database, the data may retain the format of that database. Sometimes that might be [`.spss`](https://en.wikipedia.org/wiki/SPSS) or [`.accdb`](https://en.wikipedia.org/wiki/Microsoft_Access), which require special software to access.
 
 In other cases, a spreadsheet is printed off to a paper file, then that piece of paper is scanned and emailed to you as an image PDF. Sure, you could manually enter the data, but that's a terrible waste of your time and the probability of making a mistake is very high.
-
-For the purposes of these courses, all examples will be fairly easy to access. But be warned, the real world can be much crueler. **When requesting data it is important to always request the data in a digital spreadsheet format.** This gives us the best chance at success.
+For the purposes of these courses, all examples will be fairly easy to access. But be warned, the real world can be much crueler. **When requesting data it is important to always request the data in a digital format (rather than paper).** This gives us the best chance at success.
 
 A lot of people will offer the data as an Excel file. That's fine, but some Excel files are very complex and require you to have the same version as where it was created. A CSV file is often superior because it's a simple, standard file type. Almost every database or spreadsheet program can write out the data to a CSV file.
 
