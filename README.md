@@ -1,3 +1,5 @@
+**This repo is constantly under development. Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!**
+
 ## Introduction
 
 #### Data is everywhere.
@@ -78,4 +80,4 @@ Results. We’ve Tried Most of Them.](https://www.nytimes.com/interactive/2016/1
     * [Election maps](http://www-personal.umich.edu/~mejn/election/2016/) - Mark Newman, Department of Physics and Center for the Study of Complex Systems, University of Michigan (short paper)
 * [First Python Notebook](http://www.firstpythonnotebook.org/index.html) (getting started with Jupyter and Pandas) - Ben Welsh, LA Times Data Desk editor
 
-**What great books and blog posts am I missing? Let me know! rob [at] uohack [dot] com.**
+**What great books and blog posts am I missing? Let me know! rob [at] uohack [dot] com**
