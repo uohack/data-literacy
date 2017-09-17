@@ -1,7 +1,3 @@
-This is a web write-up for four courses to be given fall 2017 for UOHack. Content is still under development.
-
----
-
 ## Introduction
 
 #### Data is everywhere.
@@ -38,9 +34,9 @@ Since this is a small, simple data set, seeing the figures in a table can help p
 
 This simple chart, made in Google Sheets, gives the reader an additional way to compare the numbers.
 
-#### Data literacy is a skill that can be learned and should be practiced.
+While all three ways of viewing data (anecdotally, table and chart) are all technically correct, they each provide a different experience. If you are going to be analyzing data, you also need to keep in mind how you will communicate your findings.
 
-No matter who you are, or what you do with your life, data will be present. Whether you decide to interact with it or not is up to you.
+#### Data literacy is a skill that can be learned and should be practiced.
 
 ## Course overview
 
@@ -48,27 +44,26 @@ This is a four-course introduction on data literacy. We will start from zero, wi
 
 **My goal is to introduce you to these topics and give you the tools to begin working with data.** You will see several examples, all of which use real-world data, and learn different techniques to work with the various types of information.
 
-Like learning anything else, you will need to practice in order to get better. Unfortunately, this takes time and effort. Fortunately, the tools are largely open-source and free and with computers, the feedback is near immediate. But if you pay attention to these four courses, you will be equipped with a solid foundation to tackle any data set.
+Like learning anything else, you will need to practice in order to get better. Unfortunately, this takes time and effort. Fortunately, the tools are largely open-source and free. If you pay attention to these four courses, you will be equipped with a solid foundation to tackle any data set.
 
 Let's get going.
 
 ## Course list
 
-* 01 - Getting started
+* 01 - [Getting started](https://github.com/uohack/data-literacy/tree/master/01-getting-started)
   * Basic steps of working with data
   * CSV (Comma-Separated Values)
-  * Open data in a spreadsheet
-  * Use a spreadsheet to do basic cleaning
+  * Get data into a spreadsheet
   * **Example:** Lane County pot shop delivery
-* 02 - Cleaning data
+* 02 - [Cleaning data](https://github.com/uohack/data-literacy/tree/master/02-cleaning-data)
   * Basic spreadsheet formulas
   * Percent change
-  * **Example:** Extract data from PDF (proposed city budget) and clean
-* 03 - Sharing data
+  * **Example:** Extract data from PDF (city budget) and clean
+* 03 - [Sharing data](https://github.com/uohack/data-literacy/tree/master/03-sharing-data)
   * Being transparent with data
   * Types of data visualizations
   * **Example:** Query federal data and create map
-* 04 - Advanced analysis
+* 04 - [Advanced analysis](https://github.com/uohack/data-literacy/tree/master/04-advanced-analysis)
   * Use Python pandas to analyze data
   * **Example:** Examine campus parking citations using Pandas
 
@@ -82,3 +77,5 @@ Of course, this is a very short introduction to a massive world of information. 
 Results. We’ve Tried Most of Them.](https://www.nytimes.com/interactive/2016/11/01/upshot/many-ways-to-map-election-results.html) - New York Times (article)  
     * [Election maps](http://www-personal.umich.edu/~mejn/election/2016/) - Mark Newman, Department of Physics and Center for the Study of Complex Systems, University of Michigan (short paper)
 * [First Python Notebook](http://www.firstpythonnotebook.org/index.html) (getting started with Jupyter and Pandas) - Ben Welsh, LA Times Data Desk editor
+
+**What great books and blog posts am I missing? Let me know! rob [at] uohack [dot] com.**
