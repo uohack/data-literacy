@@ -87,7 +87,7 @@ Let's say you have this month's sales figures in the A column. In cell B1 you ha
 # A3 = 5
 # B1 = 100
 
-=CONCATENATION(SUM(A1:A3), IF(SUM(A1:A3)<B1,": did NOT make quota",": made quota this month"))
+=CONCATENATE(SUM(A1:A3), IF(SUM(A1:A3)<B1,": did NOT make quota",": made quota this month"))
 ```
 
 <details>
@@ -95,11 +95,9 @@ Let's say you have this month's sales figures in the A column. In cell B1 you ha
 This should render: `95: did NOT make quota`
 
 Is that what you got?
+
+You can see an example [here](https://docs.google.com/spreadsheets/d/1pVvIxBbrfv-pM3wlGgS5i-Ih76TBe7i0tIYW5VAGBkw/edit?usp=sharing).
 </details>
-
-These are simplistic examples but offer a lot of leverage when working with data.
-
-Simple things like percentages or percent change ((N-O)/O) and more complex things like concatenating street addresses or creating new data with conditionals can be easily accomplished in spreadsheets.
 
 ## Percent change
 
