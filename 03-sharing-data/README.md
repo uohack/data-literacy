@@ -1,4 +1,4 @@
-This is the third course (out of four) on data literacy created for UOHack.
+**This repo is constantly under development. Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!**
 
 ## Introduction
 
@@ -19,7 +19,6 @@ By the end of this course you should be familiar with:
 
 * Why transparency is important when sharing data
 * The difference between different types of data visualizations
-* Why pie charts can be misleading
 * Be able to take basic location data and make a map
 
 ## Be open
@@ -31,7 +30,7 @@ Working with data can be fraught with pitfalls. One great way to avoid issues is
 
 In addition to sharing the original data, you can (and should) explain how you modified the data and completed your analysis. In academic studies this is typically referred to as the methodology and is slowly, but surely, [beginning to appear](https://www.washingtonpost.com/graphics/business/create-your-ideal-streaming-bundle/#methodology) more often in journalism.
 
-This is especially important because data is so easily manipulated in spreadsheet programs, and it's helpful to write out exactly what was done to that data.
+This is especially important because data is so easily manipulated in spreadsheet programs and it's helpful to write out exactly what was done to that data.
 
 Beyond simple transparency, there are a number of additional ways to share information. Let's look at some of them now.
 
@@ -85,7 +84,7 @@ Remember, your goal is to simplify and share the data, so don't include too many
 
 If you have data tied to a geography, you may want to map it. This process can be much more difficult than other data visualization methods. For starters, there are a lot of different types of maps.
 
-An example is single point maps, where you are simply plotting points based on latitude and longitude, are far simpler than heat maps.
+An example is single point maps, where you are simply plotting points based on latitude and longitude. These are far simpler to create than heat maps.
 
 A word of caution: Maps can be deceptive. The classic example is county election maps. In fact, a [University of Michigan professor](http://www-personal.umich.edu/~mejn/election/2016/) addressed this issue after the 2012 and 2016 presidential elections. The two maps below represent the same data. If you ever want to map election data, I urge you to read his report [here](http://www-personal.umich.edu/~mejn/election/2016/).
 
@@ -95,13 +94,19 @@ Let's go through an example real quick of how I might make a simple map.
 
 ## Example
 
-**Scenario:** You're an entrepreneur looking to buy up a big swath of land for a new, secretive venture. Let's just say you need a place to put a lot of servers and Lane County has agreed to give you a deal on taxes if you build here. Because you want to water cool your servers, it would be best to build near a major river. But, you've heard recently about the potential for a massive earthquake and you're a bit paranoid that when "the big one" hits, dams could fail and your new building could be flooded. Your goal is to go check out the U.S. Army Corps of Engineers' 2016 National Inventory of Dams and map out large dams in Lane County.
+**Scenario:** You're an entrepreneur looking to buy up a big swath of land for a new, secretive venture. Let's just say you need a place to put a lot of servers and Lane County has agreed to give you a deal on taxes if you build here.
 
-**Note:** You will once again need access to Google Drive for this example. Instead of Sheets, we're going to use an app called Fusion Tables. I'll explain how to install that below.
+Because you want to water cool your servers, it would be best to build near a major river. But, you've heard recently about the potential for a massive earthquake and you're a bit paranoid that when "the big one" hits, dams could fail and your new building could be flooded.
+
+Your goal is to go check out the U.S. Army Corps of Engineers' 2016 National Inventory of Dams and map out large dams in Lane County.
 
 This example will show you how to query a government database, select the data you need and map it. First, we need to go get some data.
 
-Head on over to the [U.S. Army Corps of Engineers 2016 National Inventory of Dams](http://nid.usace.army.mil/cm_apex/f?p=838:1:0::NO), which I found through simple Google searches. For the purposes of this example go ahead and select Academic. After you're granted access, go ahead and click on the Help button in the header. Before we query any data we need to figure out what data is available.
+**Note:** You will once again need access to Google Drive for this example. Instead of Sheets, we're going to use an app called Fusion Tables. I'll explain how to install that below.
+
+### Getting started
+
+Head on over to the [U.S. Army Corps of Engineers 2016 National Inventory of Dams](http://nid.usace.army.mil/cm_apex/f?p=838:1:0::NO), which I found through a simple Google search. For the purposes of this example go ahead and select Academic. After you're granted access, go ahead and click on the Help button in the header. Before we query any data we need to figure out what data is available.
 
 There is a lot going on on this page, but I'd say this is par for the course when it comes to government data. For now, let's focus on the NID columns. What do we want to know? Here are the columns I would be interested in:
 
@@ -131,17 +136,17 @@ In two queries we've gone from more than 10,000 rows down to 30. But we can simp
 
 If you go back over to the Help tab and select the question mark bubble next to NID_storage you'll see that dam storage is measured in acre-feet. That's good to know but it doesn't help me visualize how much water that is. Let's try [converting 25,000 acre-feet into gallons](https://www.google.com/search?q=25000+acre+feet+to+gallons). We find out that's 8.15x10^<sup>9</sup> gallons. That is a lot of water.
 
-**Resume:** Ok, let's take a look at what we've go now.
+**Resume:** Ok, let's take a look at what we've got now.
 
 Back in the query table it looks like the dams I want but there's all this extra info that I don't need right now. And, more importantly, we're missing latitude and longitude, which we need for mapping. Go back to Actions > Select Columns. Feel free to drop any columns you don't need and add any that are of interest, including latitude and longitude. Apply your changes.
 
 Now we have a data set we can do something with. But how do we export our information? There doesn't seem to be any button that says "Download CSV," although that would be nice.
 
-It does look like it's in some sort of web table format. Let's try to just copy and paste it into an empty Google Sheet. It's so simple it just might work.
+It does look like it's in some sort of web table format. Let's try to just copy and paste it into an empty Google Sheet. It's so simple it just might work ...
 
 ![nid](https://user-images.githubusercontent.com/4853944/27067582-76917a02-4fc0-11e7-9c3b-3816a904674f.gif)
 
-Sometimes you get lucky.
+... and sometimes you get lucky.
 
 There are some small problems though. The headers came through with white text on a white background and there's an empty column on the left-hand side. But those are easy to fix with some minor cleaning. Other than that, we did all the cleaning we needed to do with the queries.
 
@@ -149,13 +154,15 @@ That's one of the perks of getting access to the full database. You're able to g
 
 ### Fusion Tables
 
-Now, we're going to take the data from Google Sheets to Fusion Tables. In Drive select New > More > Connect More Apps and search for "fusion tables". I know it's labeled as "experimental," but I've been using it for six years and it's always been experimental. The program is solid, don't worry about that.
+Now, we're going to take the data from Google Sheets to Fusion Tables, but first you need to install Fusion Tables. In Drive select New > More > Connect More Apps and search for "fusion tables".
+
+I know it's labeled as "experimental," but I've been using it for six years and it's always been experimental. The program is solid, don't worry about that.
 
 After you have Fusion Tables installed, go back to Drive and select New > More > Google Fusion Tables.
 
 Now, you can create an empty table, upload data (CSVs, other spreadsheet formats) or import data from a Google Sheet. We will be doing the latter. Select the Google Sheet where you put your NID data and click Select.
 
-Fusion Tables lets your preview your data next, but there shouldn't be any surprises here, click Next. Give your table a name and be sure to attribute the data to the U.S. Army Corps of Engineers 2016 National Inventory of Dams database and provide a link.
+Next, Fusion Tables lets your preview your data but there shouldn't be any surprises here, click Next. Give your table a name and be sure to attribute the data to the U.S. Army Corps of Engineers 2016 National Inventory of Dams database and provide a link.
 
 **Side note:** This is a fairly small data set but you can import up to 250MB of data. Because CSVs are such simple file formats, you can pack a ton of data into 250MB.
 
@@ -220,7 +227,6 @@ At this point you should be familiar with:
 
 * Why transparency is important when sharing data
 * The difference between different types of data visualizations
-* Why pie charts can be misleading
 * Be able to take basic location data and make a map
 
-In the next course will go over advanced analysis with Python pandas.
+In the [next course](https://github.com/uohack/data-literacy/tree/master/04-advanced-analysis) will go over advanced analysis with Python Pandas.
