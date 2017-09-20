@@ -32,7 +32,7 @@ In addition to sharing the original data, you can (and should) explain how you m
 
 This is especially important because data is so easily manipulated in spreadsheet programs and it's helpful to write out exactly what was done to that data.
 
-Beyond simple transparency, there are a number of additional ways to share information. Let's look at some of them now.
+Beyond simple transparency, there are [a number of additional ways](http://datavizproject.com/) to share information. Let's look at some of them now.
 
 ## Bar chart
 

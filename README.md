@@ -80,5 +80,6 @@ Results. We’ve Tried Most of Them.](https://www.nytimes.com/interactive/2016/1
     * [Election maps](http://www-personal.umich.edu/~mejn/election/2016/) - Mark Newman, Department of Physics and Center for the Study of Complex Systems, University of Michigan (short paper)
 * [First Python Notebook](http://www.firstpythonnotebook.org/index.html) (getting started with Jupyter and Pandas) - Ben Welsh, LA Times Data Desk editor
 * [Here are 9 email newsletters about data… I think you’ll like at least 4 of them](https://onlinejournalismblog.com/2017/09/19/email-newsletters-about-data-journalism/#more-24944) - Online journalism blog
+* [Data viz project](http://datavizproject.com/)
 
 **What great books and blog posts am I missing? Let me know! rob [at] uohack [dot] com**
