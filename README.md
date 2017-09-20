@@ -69,9 +69,9 @@ Let's get going.
   * Use Python pandas to analyze data
   * **Example:** Examine campus parking citations using Pandas
 
-## Recommended reading
+## Other resources
 
-Of course, this is a very short introduction to a massive world of information. Here are some additional resources depending on what you're interested in.
+Of course, my four courses here are a very short introduction to a massive world of information. Here are some additional resources depending on what you're interested in.
 
 * [Data journalism handbook](http://datajournalismhandbook.org/) (220 pages print, free online)
 * [Map types and data types](http://www.geog.ucsb.edu/~kclarke/Geography183/Lecture06.pdf) - UC Santa Barbara (PowerPoint lecture notes)
@@ -79,5 +79,6 @@ Of course, this is a very short introduction to a massive world of information. 
 Results. We’ve Tried Most of Them.](https://www.nytimes.com/interactive/2016/11/01/upshot/many-ways-to-map-election-results.html) - New York Times (article)  
     * [Election maps](http://www-personal.umich.edu/~mejn/election/2016/) - Mark Newman, Department of Physics and Center for the Study of Complex Systems, University of Michigan (short paper)
 * [First Python Notebook](http://www.firstpythonnotebook.org/index.html) (getting started with Jupyter and Pandas) - Ben Welsh, LA Times Data Desk editor
+* [Here are 9 email newsletters about data… I think you’ll like at least 4 of them](https://onlinejournalismblog.com/2017/09/19/email-newsletters-about-data-journalism/#more-24944) - Online journalism blog
 
 **What great books and blog posts am I missing? Let me know! rob [at] uohack [dot] com**
