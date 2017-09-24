@@ -1,4 +1,4 @@
-**This repo is constantly under development. Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!**
+*Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!*
 
 ## Introduction
 
@@ -66,7 +66,7 @@ To begin this example, please download [this CSV](https://raw.githubusercontent.
 
 ### Text editors
 
-You will also need a [text editor](https://www.maxmasnick.com/2015/08/12/real-text-editor/). A text editor allows you to open text files (like CSVs) in the raw text format. This is important because you know immediately if the data is corrupt and immediately learn about the data structure. 
+You will also need a [text editor](https://www.maxmasnick.com/2015/08/12/real-text-editor/). A text editor allows you to open text files (like CSVs) in the raw text format. This is important because you know immediately if the data is corrupt and immediately learn about the data structure.
 
 Text editors differ from word processors that you may be familiar with, in that they only deal with plain text, not formatted text. If you don't have a text editor installed, I suggest downloading [Sublime Text](https://www.sublimetext.com/).
 
@@ -113,7 +113,7 @@ At the end of the file, there is one shop from Lincoln County. Our goal is to fi
 
 You can also see that the notes column includes a value called "Med Grade," which we don't really care about for this example. Let's simplify things and create a new column just for delivery. Go ahead and add a "Delivery" header. Now we're going to do some manual data manipulation. Go down the list and type "TRUE" in the cell if a shop has delivery. You can delete the Notes column when you're done.
 
-Now we want to sort out just the shops that offer delivery. Let's freeze the first row (View > Freeze > 1 row). Click on the drop down arrow next to the Delivery column header and select "Sort sheet (A > Z)". 
+Now we want to sort out just the shops that offer delivery. Let's freeze the first row (View > Freeze > 1 row). Click on the drop down arrow next to the Delivery column header and select "Sort sheet (A > Z)".
 
 All of the shops without TRUE in the Delivery column should be grouped on top. Go ahead and delete that block of shops that does not deliver.
 

@@ -1,4 +1,4 @@
-**This repo is constantly under development. Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!**
+*Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!*
 
 ## Introduction
 
