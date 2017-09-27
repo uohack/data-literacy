@@ -115,7 +115,7 @@ So let's give it a go. Hey, it works! Kind of...
 
 We need to clean that up a little bit. You have two options. The first is to keep the data in the spreadsheet and do manual cleaning using copy and pasting. The threat of introducing errors is pretty low because it's a fairly small data set and it's easy to double check your work.
 
-The second option is to copy/paste the data into a text editor and format the data in there. If you utilize [regular expressions](http://www.hongkiat.com/blog/getting-started-with-regex/), as well as find and replace then this can be quicker than manual data editing. Unfortunately, regular expressions have a fairly steep learning curve so this is not a great venue to teach that.
+The second option is to copy/paste the data into a text editor and format the data in there. If you utilize [regular expressions](http://www.hongkiat.com/blog/getting-started-with-regex/), as well as find and replace, then this can be quicker than manual data editing. Unfortunately, regular expressions have a fairly steep learning curve so this is not a great venue to teach that.
 
 We'll continue with manual data editing in the spreadsheet.
 
@@ -125,7 +125,7 @@ Start with the headers and make sure those are accurate. Then move to separating
 
 Got it? Good.
 
-There's a few things that I'd like to point out:
+There're a few things that I'd like to point out:
 
 * Google sheets automatically added an additional decimal point when it formatted the percentages. You probably noticed that when double checking your numbers. This is easily fixed if you highlight that column and move the decimal point up using the "Decrease decimal places" button in the tool bar.
 * The original data set was not very consistent with the dollar styles. The first and last rows have a dollar sign but the others do not. Let's format all these cells. Highlight the B and C columns and select Format > Number > Currency (rounded).
