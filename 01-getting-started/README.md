@@ -56,6 +56,24 @@ Because the files is just text, it is the lowest-common denominator for any data
 
 *Warning: Some organizations keep complex multi-sheet spreadsheets with advanced formatting. These are hard to convert into CSV without losing data. Each situation is different and sometimes that advanced formatting is beneficial, but defaulting to CSV is usually a good plan.*
 
+### Other data formats
+
+There are many other ways to store data in text files (or otherwise).
+
+One of the most popular ways to pass data via API is JSON, or JavaScript Object Notation. JSON files contain a series of key-value pairs as demonstrated below.
+
+```JavaScript
+{
+	"Key": "Value",
+	"Parent key": {
+		"Child key": "Child value",
+		"Another child": "Another child value"
+	}
+}
+```
+
+TSVs are another popular data file type. These are very similar to CSVs but they are tab separated instead of comma separated.
+
 ## Example
 
 **Scenario:** You're a student journalist and you've heard rumors of students ordering marijuana and having it delivered to their dorms. This, of course, is [against UO rules](https://dos.uoregon.edu/marijuana), which prohibit marijuana on campus. Your goal for this example is to figure out how many pot shops near the UO deliver as the starting point for a story.
