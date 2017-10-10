@@ -1,5 +1,15 @@
 *Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!*
 
+We'll be hosting this workshop Tuesdays from 6-8 p.m. in Knight Library room 144. Schedule below:
+
+| Date | Subject |
+| --- | --- |
+| **Oct. 17** | Getting started, the basics of data |
+| **Oct. 24** | Cleaning data, spreadsheets and formulas |
+| Oct. 31 | Halloween, we'll take this week off |
+| **Nov. 7**  | Sharing data, the basics of data visualization |
+| **Nov. 14** | Advanced analysis with Python Pandas|
+
 ## Introduction
 
 #### Data is everywhere.
