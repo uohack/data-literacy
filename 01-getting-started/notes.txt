@@ -1,6 +1,6 @@
 * process
   * Get data
-    * Always want it in a spreadsheet, preferrably a CSV
+    * Always want it in a spreadsheet, preferably a CSV
     * No database files
     * Just ask or utilize open records requests
   * Clean data
