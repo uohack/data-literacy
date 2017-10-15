@@ -1,0 +1,38 @@
+* process
+  * Get data
+    * Always want it in a spreadsheet, preferrably a CSV
+    * No database files
+    * Just ask or utilize open records requests
+  * Clean data
+    * Dealing with issues in the data, or getting it in a format you can work with
+    * Might be getting it out of a PDF
+    * Might include creating a new column - feature engineering
+  * Analyze data
+    * Figure out what it means
+  * Present (or share) data
+    * Do story or make pitch
+
+* 5-10 minute break
+
+* example
+  * Explain hypothetical
+  * Go over CSV file
+  * Save to desktop (1. Get data)
+  * Open in Google sheets
+  * Look it over, point out some stuff, clean as we go (2. Clean data)
+  * Feature engineer delivery column (Still cleaning)
+  * Pivot tables (3. Analyze data)
+  * Get rid of any that don't have deliver (Still cleaning)
+  * Draw conclusions (Back to analysis)
+  * Talk about how to present it (4. Share data)
+
+* Wrap up
+  * Go over example
+    * Get data
+    * Clean data
+    * Analyze data
+    * Present (or share) data
+  * Ask for feedback/tell them that you'll send out a survey
+  * Remind of next sessions
+  * Thank the library
+  * Dismiss
