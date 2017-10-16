@@ -2,7 +2,7 @@
 
 ## Introduction
 
-As we start every course, here is a simple work flow for basic data analysis.
+As we start every course, here is a simple workflow for basic data analysis.
 
 * Get data
 * Clean data
@@ -120,7 +120,7 @@ There is a lot going on on this page, but I'd say this is par for the course whe
 * NID_storage - this will tell us roughly how "big" it is
 * State - so that we can limit our query to Lane County in Oregon
 
-Ok, now that we have a sense of what data is available and what we'd like to get, go ahead and click on NID Interactive Report in the header. This will open up the dams database.
+Okay, now that we have a sense of what data is available and what we'd like to get, go ahead and click on NID Interactive Report in the header. This will open up the dams database.
 
 The first thing you should look for is how many rows are in this database. Right at the top it tells us that there are more than 10,000 rows. This is a federal database so that shouldn't be surprising. Before we proceed, let's try to cut this down to just Lane County, Oregon.
 
@@ -136,7 +136,7 @@ In two queries we've gone from more than 10,000 rows down to 30. But we can simp
 
 If you go back over to the Help tab and select the question mark bubble next to NID_storage you'll see that dam storage is measured in acre-feet. That's good to know but it doesn't help me visualize how much water that is. Let's try [converting 25,000 acre-feet into gallons](https://www.google.com/search?q=25000+acre+feet+to+gallons). We find out that's 8.15x10^<sup>9</sup> gallons. That is a lot of water.
 
-**Resume:** Ok, let's take a look at what we've got now.
+Let's take a look at what we've go now.
 
 Back in the query table it looks like the dams I want but there's all this extra info that I don't need right now. And, more importantly, we're missing latitude and longitude, which we need for mapping. Go back to Actions > Select Columns. Feel free to drop any columns you don't need and add any that are of interest, including latitude and longitude. Apply your changes.
 
