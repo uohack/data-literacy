@@ -2,7 +2,7 @@ This is the fourth course (out of four) on data literacy created for UOHack.
 
 ## Introduction
 
-As we start every course, here is a simple work flow for basic data analysis.
+As we start every course, here is a simple workflow for basic data analysis.
 
 * Get data
 * Clean data
