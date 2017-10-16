@@ -1,17 +1,17 @@
-This is the second course (out of four) on data literacy created for UOHack.
+*Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!*
 
 ## Introduction
 
-In the last course we looked at the following basic data work flow:
+In the [last course](https://github.com/uohack/data-literacy/tree/master/01-getting-started) we looked at the following basic data work flow:
 
 * Get data
 * Clean data
 * Analyze data
 * Present (or share) data
 
-The truth of the matter is that cleaning the data usually takes up the vast majority of your time. This time spent cleaning leads to better understanding and important insights.
+The truth is that cleaning the data usually takes up the vast majority of your time. This time spent cleaning leads to better understanding and important insights.
 
-In this course I'm going to go over ways to work with data in a spreadsheet and some more advanced methods of cleaning. We'll also go through an example where you have to go get data out of a PDF, do some math to check the numbers and at the end we'll create a simple graph.
+In this course I'm going to go over ways to work with data in a spreadsheet and some more advanced methods of cleaning. We'll also go through an example where you have to go get data out of a PDF, do some math to check the numbers and then we'll create a simple graph.
 
 By the end of this course you should:
 
@@ -25,47 +25,81 @@ Let's get started.
 
 ## The power of spreadsheets
 
-The great thing about digital spreadsheets is that they offer a number of powerful mathematical and programmatic functions to help you work with data. Here are a few useful formulas:
+The great thing about digital spreadsheets is that they offer a number of powerful mathematical and programmatic functions to help you work with data. Here are a few useful formulas.
+
+### Adding
+
+Let's start simple. Say you need to add two cells together. You can do that like so:
 
 ```
-# Adding
-=SUM(A1:A5)
-### Adds the numerical values of A1, A2, A3, A4 and A5
-
-# Conditional statements
-=IF(A1>A2,"One is bigger","Two is bigger")
-### Conditional IF test
-### For example, given:
-### A1 = 5 and A2 = 7 the cell would display:
-### Two is bigger
-
-# Concatenation
-=CONCATENATION(B2,": ",B3)
-### Concatenate multiple strings
-### For example, given:
-### B2 = "Monday" and B3 = "Weekday" would display:
-### Monday: Weekday
+=SUM(B3,C10)
+# The same as: B3 + C10
 ```
 
-You can also combine formulas like this simple example:
+Or you can add a series of cells like so:
 
 ```
-# The A column is sales this month, B1 is this month's quota
+=SUM(A2:A8)
+# The same as: A2 + A3 + A4 + A5 + A6 + A7 + A8
+```
+
+### Conditional statements
+
+A [conditional statement](https://en.wikipedia.org/wiki/Conditional_(computer_programming)) is a programming principle where you can say if something is like this, then do this, otherwise do something else. They're also called if-else statements. You can do these in spreadsheets and they can be very helpful.
+
+For instance, say you have a monthly report and you need to figure out each month if the company has met it's projections. Each one of these values is a different cell in a spreadsheet. So you would do something like this:
+
+```
+# A1 is your monthly profit
+# A2 is your projected profit
+=IF(A1>A2,"You made your projections","You did not make your projections")
+```
+In this example, you would put this equation in another cell, like A3. Then, the A3 cell would tell you if you met your projections or not.
+
+### Concatenation
+
+To concatenate is to simply combine multiple things. In spreadsheets, sometimes it's helpful to concatenate multiple cells. This is common with addresses.
+
+Say the B column in your spreadsheet contains a user's street address. The C column contains the city, D contains the state and E contains the ZIP code. You need to concatenate these to print out a legible address.
+
+```
+# B2 = "500 Example St."
+# C2 = "Eugene"
+# D2 = "OR"
+# E2 = "97401"
+
+=CONCATENATION(B2," ",C2,", ",D2," ",E2)
+
+# This would combine those cells with the additional spaces and comma like so:
+
+"500 Example St. Eugene, OR 97401"
+```
+
+### Combining formulas
+
+If you're feeling fancy, you can get really effcient by combining formulas. But, it's important to remember order of operations. (Remember [PEMDAS](https://www.mathsisfun.com/operation-order-pemdas.html)?)
+
+Let's say you have this month's sales figures in the A column. In cell B1 you have this month's projections. Try to solve this formula on your own.
+
+```
 # A1 = 50
 # A2 = 40
 # A3 = 5
 # B1 = 100
-=IF(SUM(A1:A3)<B1,"Did NOT make quota","Made quota this month")
-=IF((50+40+5)<100,"Did NOT make quota","Made quota this month")
-=IF(95<100,"Did NOT make quota","Made quota this month")
-# Did NOT make quota
+
+=CONCATENATE(SUM(A1:A3), IF(SUM(A1:A3)<B1,": did NOT make quota",": made quota this month"))
 ```
 
-These are simplistic examples but offer a lot of leverage when working with data.
+<details>
+<summary>Click here for the answer</summary>
+This should render: `95: did NOT make quota`
 
-Simple things like percentages or percent change ((N-O)/O) and more complex things like concatenating street addresses or creating new data with conditionals can be easily accomplished in spreadsheets.
+Is that what you got?
 
-### Percent change
+You can see an example [here](https://docs.google.com/spreadsheets/d/1pVvIxBbrfv-pM3wlGgS5i-Ih76TBe7i0tIYW5VAGBkw/edit?usp=sharing).
+</details>
+
+## Percent change
 
 Matt Waite, a journalism instructor at the University of Nebraska, tells his students that they can't graduate until they [prove to him](https://twitter.com/ACRStriker9/status/861642695390965762) that they have memorized the formula for percent change.
 
@@ -83,7 +117,8 @@ Matt Waite, a journalism instructor at the University of Nebraska, tells his stu
 ### This makes since because 5 apples is 50% less than 10 apples.
 
 # Real-world example
-### Last month you had $132,638 in sales. This month you had $145,689 in sales. ### What's the percent change?
+### Last month you had $132,638 in sales. This month you had $145,689 in sales.
+### What's the percent change?
 (N-O)/O
 ($145,689-$132,638)/$132,638
 $13,051/$132,638
@@ -99,19 +134,23 @@ I want to spend the majority of this course in an example that shows many differ
 
 **Note:** This proposed budget was downloaded in June 2017 and may have changed. Any changes do not matter for the sake of this example.
 
-Go ahead and crack that budget PDF open and find page 56/62. There is a table labeled "General Fund (All Subfunds) Operating Budget Summary by Department" that we are most interested in. First step? Get the data into a spreadsheet
+Go ahead and crack that budget PDF open and find page 56/62. There is a table labeled "General Fund (All Subfunds) Operating Budget Summary by Department" that we are most interested in. First step? Get the data into a spreadsheet, of course!
 
 ### Getting data out of PDFs
 
-There are several types of PDFs, but for the purposes of this course I'm going to oversimplify to just two types: native and scanned. Scanned PDFs are effectively flat images where text cannot be copied. There are a number of OCR programs that try to retrieve text from these images, but nothing is perfect.
+There are several types of PDFs, but for the purposes of this course I'm going to oversimplify to just two types: native and scanned. Scanned PDFs are effectively flat images where text cannot be copied. There are a number of OCR programs that try to retrieve text from these images, but doing so is time consuming and difficult.
 
-Native PDFs, on the other hand, offer fairly easy copying of any text information. This means that most tables or spreadsheets are extractable. The PDF in this example is native so we should try to copy and paste the table into an empty Google Sheet.
+Native PDFs, on the other hand, have text that can be easily copy and pasted. This means that most tables or spreadsheets are extractable. The PDF in this example is native so we should try to copy and paste the table into an empty Google Sheet.
 
-**Pro tip:** The way that Google Chrome renders PDFs make them copy and paste easier than Apple's Preview application.
+**Pro tip:** The way that Google Chrome renders PDFs make them copy and paste easier than Apple's Preview application. Other applications will have their own flavor. If something doesn't work the way you should, experiment with others.
 
-So let's give it a go. Hey, it works! Kind of...
+So let's give it a go.
+
+Hey, it works! Kind of...
 
 ![screen shot 2017-06-11 at 8 47 20 pm](https://user-images.githubusercontent.com/4853944/27018711-3e7774ac-4ee7-11e7-9b5d-4706bf365b8e.png)
+
+*Remember, your mileage may vary, depending on the application you copied from ...*
 
 We need to clean that up a little bit. You have two options. The first is to keep the data in the spreadsheet and do manual cleaning using copy and pasting. The threat of introducing errors is pretty low because it's a fairly small data set and it's easy to double check your work.
 
@@ -133,9 +172,9 @@ There're a few things that I'd like to point out:
 
 ### Check their math
 
-You should never trust someone else to do analysis for you. Especially when it could benefit them. If someone does some math for you, double check their work.
+You should never trust someone else to do math for you. Especially when it could benefit them. Always double check their work.
 
-Let's create a new column, and using the equation for percent change, plug in the correct cells for the first row. After you have that value calculated, you can drag down on the bottom right corner of the cell and apply that math to the rest of the column.
+Let's create a new column with a header of "my-percent-change". Using the equation for percent change you just learned, plug in the correct cells for the first row. After you have that value calculated, you can drag down on the bottom right corner of the cell and apply that math to the rest of the column.
 
 ![pc](https://user-images.githubusercontent.com/4853944/27019805-791ed8d0-4ef0-11e7-9d5a-2496187cbe50.gif)
 
@@ -149,11 +188,9 @@ In a new column, let's divide the FY18 budget by the total to get a sense of sca
 
 ![percent of total error](https://user-images.githubusercontent.com/4853944/28104867-ee0a4fa4-6691-11e7-9a83-bad342f99064.png)
 
-
 Uh oh. That's not good. What's wrong? Well, when we drag down the formula to apply it to the cells below, the cells in the formula are changed as well. You can see that the formula for F2 is C2/C8 and F3 is C3/C9, but it should be C3/C8. We need to "lock" in C8 in the formula. This can be accomplished with a dollar sign, like so: `=(C2/C$8)`.
 
 ![percent of total corrected](https://user-images.githubusercontent.com/4853944/28104918-28dcd354-6692-11e7-86fa-46273546e639.png)
-
 
 This adds some context, but one thing we haven't looked at is the actual dollar value change from one year to the next. Let's solve for that with simple subtraction of B from C.
 
@@ -201,9 +238,14 @@ You can copy this process and apply it to the other columns to see charts of tho
 At this point, you should:
 
 * Understand basic spreadsheet formulas
+  * Get data
+  * Clean data
+  * Analyze data
+  * Present (or share) data
 * Know the formula for percent change
+  * ((N-O)/O)
 * Have a decent understanding of how to transfer data from a native PDF to a spreadsheet
 * Know how to add data columns to your set and populate them using spreadsheet formulas
 * Begin to visualize data using Google charts
 
-Next, we'll dive deeper into sharing data and do a simple mapping example.
+[Next, we'll dive deeper into sharing data and do a simple mapping example.](https://github.com/uohack/data-literacy/tree/master/03-sharing-data)

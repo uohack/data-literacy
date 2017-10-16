@@ -1,4 +1,4 @@
-This is the fourth course (out of four) on data literacy created for UOHack.
+*Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!*
 
 ## Introduction
 
@@ -17,8 +17,8 @@ By the end of this course you should:
 
 **Note:** If you do not want to or are not able to actively participate in this course, that is totally fine. I created this course to show you want is possible, not as a step-by-step guide to learning pandas. That said, there are two ways to proceed:
 
-1. You may follow along through the example using a notebook I created and is served by Github [here](https://github.com/uohack/data-literacy/blob/master/04-advanced-analysis/parking.ipynb). For those of you not familiar with command line, this is strongly encouraged. Pleae do read through the whole course, but do not feel discouraged if you do not fully understand what's going on.
-1. For those of you with command line experience, or the brave, I have place enough information below to push you in the right direction. But I do not explain every step from zero to working in a Jupyter notebook. You will need to do some outside reading to get your computer up to speed. I would recommend you go through the tutorial once, reading the notebook via Github (option one) and then come back and try to do it yourself later.
+1. You may follow along through the example using a notebook I created and is served by Github [here](https://github.com/uohack/data-literacy/blob/master/04-advanced-analysis/parking.ipynb). For those of you not familiar with command line and Python, this is strongly encouraged. Please do read through the whole course, but do not feel discouraged if you do not fully understand what's going on.
+1. For those of you with command line experience and Python, I have placed enough information below to push you in the right direction. But I do not explain every step from zero to working in a Jupyter notebook. You will need to do some outside reading to get your computer up to speed. I would recommend you go through the tutorial once, reading the notebook via Github (option one) and then come back and try to do it yourself later.
 
 ## Background
 
@@ -95,7 +95,7 @@ All of that information gives us a great introduction to this data set. But it c
 
 ### Modifying data
 
-Remember, there is data from outside FY15-16, but we don't know the exact range of the dates. To better work with this column, let's convert the values, which are plain text, into datetime objects. We know that this column is plain text becuase back in `.info()` the data type was a regular old 'object'. After we convert the column to datetime, we'll be able to do all sorts of analysis based on the date.
+Remember, there is data from outside FY15-16, but we don't know the exact range of the dates. To better work with this column, let's convert the values, which are plain text, into datetime objects. We know that this column is plain text because back in `.info()` the data type was a regular old 'object'. After we convert the column to datetime, we'll be able to do all sorts of analysis based on the date.
 
 To to this we use a pandas method called `to_datetime()` to convert that column into datetime. This may take a second, we have more than 30,000 rows after all.
 
@@ -125,7 +125,7 @@ citations = citations.drop(citations[citations['ISSUE DATE'] < '7-1-2015'].index
 
 Now we can do a `.describe()` on the column and see that the first date is July 1, 2015 and the last date is June 30, 2016.
 
-**Note:** You may have noticed that the time on these datetime objects is set to 00:00:00. Back when we converted the column from plain text to datetime, we probably should have also passed the time data in with the date. This would have given us more precise datetime information. But, remember, not all of the citations had ISSUE TIME values, so this might have caused additional problems that are outside the scope of this example.
+**Note:** You may have noticed that the time on these datetime objects is set to 00:00:00. Back when we converted the column from plain text to datetime, we probably should have also passed the time data in with the date. This would have given us more precise datetime information. But, remember, not all of the citations had ISSUE TIME values, so this might have caused additional problems that are outside the scope of this example. It also might have been better to just make them date objects, but, again, this is about exploring the data, not making the most efficient script to run time and time again.
 
 ### Checking locations
 
@@ -139,7 +139,7 @@ It's obvious that University Street meters are indeed the most popular place to 
 
 In scanning the counts, you should notice that 15th Avenue is listed twice in the top 30. This may be because there are two lots on 15th Avenue, but it's more likely that this is just messy data input.
 
-If you combine those two it still isn't enough to move it up into the second spot. This gives me some confidence that even if the data is messy, it isn't messy enough to skew our general findings.
+If you combine those two it still isn't enough to move it up into the second spot. This gives me some confidence that even if the data is messy (it is), it isn't messy enough to skew our general findings.
 
 At the bottom of the count it shows a length of 291 locations. That is a lot, especially given the drop off from four digits down to just two in the top 30 locations. Again, I'm guessing that this data fits a "[long tail](https://en.wikipedia.org/wiki/Long_tail)" curve, which is only to say that there are a lot of locations where only one ticket was given out. This is caused by inconsistent naming conventions and manual data input by multiple users.
 
