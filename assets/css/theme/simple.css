@@ -296,3 +296,24 @@ body {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+ * META DATA
+ *********************************************/
+.reveal .meta{
+  position: fixed;
+  /*width: 100px;*/
+  /*height: 100px;*/
+  z-index: 30;
+  left: 10px;
+  bottom: 10px;
+  -webkit-user-select: none;
+  text-align: center;
+}
+.reveal .meta *{
+  color: #ccc;
+  font-size: 18px;
+}
+
+
+

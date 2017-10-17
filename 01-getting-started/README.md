@@ -1,5 +1,9 @@
 *Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!*
 
+* [Slides](http://uohack.com/data-literacy/01-getting-started/slides/)
+* [Rob's notes](https://github.com/uohack/data-literacy/blob/master/01-getting-started/notes.txt)
+* [Example: Pot shop data](https://raw.githubusercontent.com/uohack/data-literacy/master/01-getting-started/lane-pot.csv)
+
 ## Introduction
 
 Data literacy is the ability to create, work with and analyze data. While all data is different, there are several common ideas and tools that you can learn to help you apply to nearly any data set you may encounter.
