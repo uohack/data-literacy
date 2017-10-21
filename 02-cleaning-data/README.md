@@ -1,5 +1,8 @@
 *Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!*
 
+* [Slides](http://uohack.com/data-literacy/02-cleaning-data/slides/)
+* [Notes](https://github.com/uohack/data-literacy/blob/master/02-cleaning-data/notes.txt)
+
 ## Introduction
 
 In the [last course](https://github.com/uohack/data-literacy/tree/master/01-getting-started) we looked at the following basic data work flow:
