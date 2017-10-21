@@ -1,0 +1,112 @@
+* The process
+* CSV
+* Better pivot table example
+  - SUM vs COUNT vs COUNTA
+* Percent change
+  - (N-O)/O
+  - lemonade
+    > yesterday 4, today 6 
+    > (6-4)/4 = 2/4 = .5 = 50 percent increase
+    > Sold 50 percent more today than yesterday
+    > Positive percent change, means you had increase
+  - cars
+    > last year 24, this year 16
+    > (16-24)/24 = -8/24 = -1/3 = -.33 = 33 percent decrease
+    > Sold 33 percent less this year than last
+    > Negative means you had decrease, makes sense
+  - budget
+    > last month 128,932; next month 136,211
+    > (136211-128932)/128932 = 5.6% increase
+    > Positive makes sense because it went up
+* Functions (Follow along: http://bit.ly/2xWik75)
+  - Sum
+    > =(2+2)		= 4
+    > =(A2+A3)	= 4
+    > =SUM(A2,A3)	= 4
+    > Structure of a function
+      * =(arg1, arg2, etc.)
+      * https://support.google.com/docs/answer/3093669
+    > =SUM(A2:D2) = 14
+    > Adding with a constant
+      * Dragging
+  - Average/mean, median, mode, max, min
+    > Average == mean
+    > AVERAGE(A2:A11) = 5.4
+      * Thrown off by 28, remove that and see what happens
+    > MEDIAN(A2:A11) = 2.5
+      * Makes much more sense, most numbers are below 5
+    > MODE(A2:A11) = 1
+      * Number used most often is 1
+      * Maybe the majority of your sales are one at a time
+    > MAX & MIN seem 
+  - Conditionals
+    > Describe if/else (programming concept)
+    > Given complex data set, we want to test for something
+    > If greater than $6 million
+    > If greater than $6 million, give 1% bonus, else ""
+  - Find
+    > Introduce idea of nesting 
+      * =((2+2)*(3+2))
+      * =MULTIPLY(SUM(2,2),SUM(3,2))
+    > Find "Delivery" in string
+      * What is it returning?
+      * https://support.google.com/docs/answer/3094126?hl=en
+      * Examine error, need to handle that
+      * Nest iferror
+        > =IFERROR(FIND("Delivery",A2),-1)
+  - Split
+    > This is one of very few things that you can do in Sheets but not Excel
+    > This is a programming concept of splitting strings
+    > Do split on ", "
+    > What happened there? https://support.google.com/docs/answer/3094136?hl=en
+    > Set split_by_each to False
+    > Then split on last column
+    > Delete extraneous column
+    > OH NO, what happened?
+    > Paste values only
+  - Concatenate
+    > Programming concept of adding strings together
+    > Difference between CONCAT and CONCATENATE
+      * CONCAT just does 2
+      * CONCATENATE does multiple
+    > =CONCATENATE(A2,", ",B2,", ",C2," ",D2)
+    > Easy
+  - ANSWERKEY - http://bit.ly/2xVFrtG
+* PDFs
+  - Native and non-native
+  - Scanned PDFs are pretty much a lost cause unless you have Adobe Acrobat Pro or want to learn about OCR
+  - Digital PDFs often can be reverse engineered
+    > Try copy paste
+    > Try Adobe Acrobat Reader Pro
+  - Go back and ask for the original spreadsheet
+* Example
+  - So, this is a very common task in journalism, you are assigned to write a story about the proposed city budget. So you get the proposed budget, a public document and it's 209 pages long. I'm going to give you a huge hint, the first important step is to see how the department budgets are changing. You can find that on page 62 of the PDF, although it's labeled 56. So, the first step of analyzing this budget is to start at the top and figure out what the changes are. 
+  - Download PDF: http://bit.ly/2gX2wGt (Getting the data)
+  - Copy/Paste fail (Getting the data)
+  - Set up data (column headers and row headers) (Clean the data)
+  - Copy in numbers (Clean the data)
+  - Some things are inconsistent
+    > Fix $$$, drop two decimal points
+  - Now data is fairly clean
+  - Let's do some analysis
+    > Simple data set, but dense
+    > Each line has important, different information
+  - Percent change
+    > Double check the math
+    > Notice the difference, check original data
+    > Fix decimal points
+  - Proposed budget as percent of proposed total
+    > Gives us a sense of scale
+    > Drag down and deal with error
+  - Adopted budget as percent of adopted total
+    > Shows us if there's been much of a change
+    > There hasn't
+  - Ok, what did we learn? What questions does this lead us to?
+    > Planning and development is getting a big bump but they're a small percent of the total
+    > Police has a huge chunk of the pie, but staying about the same.
+ * Wrap up
+ 
+
+
+
+
