@@ -97,7 +97,7 @@
     > Fix decimal points
   - Proposed budget as percent of proposed total
     > Gives us a sense of scale
-    > Drag down and deal with error
+    > Drag down and deal with error (/zero)
   - Adopted budget as percent of adopted total
     > Shows us if there's been much of a change
     > There hasn't
