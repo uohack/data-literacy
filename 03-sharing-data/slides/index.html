@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sharing data | Data literacy | UOHack</title>
+
+		<link rel="stylesheet" href="../../assets/css/reveal.css">
+		<link rel="stylesheet" href="../../assets/css/theme/simple.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../../assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../assets//print/pdf.css' : '../../assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="meta">
+				<small><a href="https://twitter.com/uohack">@uohack</a> | Slides: <a href="http://bit.ly/2irqHkf">bit.ly/2irqHkf</a></small>
+			</div>
+			<div class="slides">
+				<section style="background-color:#5cb85b;">
+					<h1 style="visibility: hidden;margin:0;line-height: 0;">UO Hack</h1>
+					<img src="http://uohack.com/images/logo.svg" alt="uohack logo" style="max-width: 300px;box-shadow: none;background: none;">
+					<h3 style="color:#fff;">Data literacy workshop</h3>
+					<h4 style="color:#fff;">Part 3 - Sharing data - Nov. 7, 2017</h3>
+					<aside class="notes">
+						<div>- Deep breath</div>
+						<div>- Welcome</div>
+						<div>- We probably won't go the full two hours again tonight</div>
+						<div>- As always, I'll tweet out slides and other resources after so be sure to follow us on Twitter</div>
+						<div>- Got a signup sheet coming around. Please provide email if you didn't come last time.</div>
+					</aside>
+				</section>
+				<section>
+					<h2>Tonight</h2>
+					<div style="text-align:left;max-width:500px;margin: 0 auto;">
+						<div>- Recap important stuff</div>
+						<div>- Methods of sharing data</div>
+						<div>- Data viz tools</div>
+						<div>- Example (mapping dams)</div>
+					</div>
+					<aside class="notes">
+						<div>- </div>
+					</aside>
+				</section>
+				<section>
+					<h2>The process</h2>
+					<div style="text-align:left;max-width:400px;margin: 0 auto;">
+						<div>1. Get data</div>
+						<div>2. Clean data</div>
+						<div>3. Analyze data</div>
+						<div>4. Share data</div>
+					</div>
+					<aside class="notes">
+						<div>- Want to touch on these again</div>
+					</aside>
+				</section>
+				<section>
+					<h3>CSV</h3>
+					<aside class="notes">
+						<div>- Spreadsheet in a text format</div>
+						<div>- The simplest you can get a spreadsheet</div>
+						<div>- CSV stands for comma separated values</div>
+						<div>- You can open CSVs in any spreadsheet application or a plain text editor</div>
+						<div>- You can also export a CSV from nearly every DB or spreadsheet app</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Sharing data</h3>
+					<aside class="notes">
+						<div>- Could be giving a speech, writing a report or producing a visualization. The goal in all of these is to answer the question and simplify it in a way that can be easily communicated.</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Be transparent</h3>
+					<aside class="notes">
+						<div>- Be open about your methods of analyzing the data.</div>
+						<div>- Be honest about potential issues you see in the data set.</div>
+						<div>- Provide the original data set for download.</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Data viz</h3>
+					<aside class="notes">
+						<div>- Skill in high demand</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Bar chart</h3>
+					<img src="https://user-images.githubusercontent.com/4853944/27066387-7d7961b6-4fb8-11e7-9cc5-a0c1325701ea.png">
+					<aside class="notes">
+						<div>- Bar charts are great for showing comparison between different measures of the same value. For instance, a city's revenue over multiple years, or sales figures on different products.</div>
+						<div>- Workhorse. More times than not, complex or fancy visualizations could be presented as a bar graph and be just as good, if not better. Remember, your goal is to analyze the data and present it to an audience so that they can understand it quickly. Bar graphs are very logical and easy to understand by almost everyone.</div>
+						<div>- But if you look carefully this graph is a bit misleading</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Bar chart</h3>
+					<p>(Zeroed y-axis)</p>
+					<img src="https://user-images.githubusercontent.com/4853944/27066388-7d795748-4fb8-11e7-8f54-ebe268e5a192.png">
+					<aside class="notes">
+						<div>- Here, if we zero out the y-axis, it tells a totally different story.</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Line graph</h3>
+					<img src="https://user-images.githubusercontent.com/4853944/27620363-08edc75c-5b7e-11e7-9e0b-d656c6d4ebd3.png">
+					<aside class="notes">
+						<div>- Line graphs show how the same measure changes over a continuous period. Temperature over time is the most common use of a line graph because it is a single entity that changes throughout the day.</div>
+						<div>- Like, bar graphs, they are simple and widely understood.</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Scatter plots</h3>
+					<img src="https://user-images.githubusercontent.com/4853944/27620658-d7eddbf4-5b7f-11e7-9612-e8891a2b02b3.png">
+					<aside class="notes">
+						<div>- Scatter plots do a really good job of comparing two values on a spectrum and can reveal correlations between the values. Be careful though, correlation does not equal causation!</div>
+						<div>- The example below depicts a comparison between years worked at a fictional company versus the employee's salary from the previous year. There's certainly a correlation, with the outlier being the new CFO. This makes sense because good workers are typically promoted over time, giving them a higher pay scale.</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Pie graphs</h3>
+					<aside class="notes">
+						<div>- Don't do pie graphs</div>
+					</aside>
+				</section>
+				<section>
+					<a href="https://twitter.com/MaxCRoser/status/857389434756505600"><img src="https://user-images.githubusercontent.com/4853944/27066459-384ddb84-4fb9-11e7-811f-0156171a091c.png"></a>
+					<aside class="notes">
+						<div>- Don't do pie graphs</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Tables</h3>
+					<aside class="notes">
+						<div>- A table can show a simplified (but still accurate) version of your data. Instead of 1,000 rows and 12 columns, you can have three columns and five rows. This could include original data or data that you've generated (like percent change!).</div>
+						<div>- Tables are easy to understand and allow for multiple types of data. Unlike graphs, you can mix words, currency, percents and regular numbers in one graphic.</div>
+						<div>- If your data is complex and does not neatly fit into a graph, this is a great solution. Remember, your goal is to simplify and share the data, so don't include too many data points.</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Mapping</h3>
+					<aside class="notes">
+						<div>- If you have data tied to a geography, you may want to map it. This process can be much more difficult than other data visualization methods. For starters, there are a lot of different types of maps.</div>
+						<div>- An example is single point maps, where you are simply plotting points based on latitude and longitude. These are far simpler to create than heat maps.</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Maps can be deceptive</h3>
+					<img src="https://user-images.githubusercontent.com/4853944/27066696-d5f39008-4fba-11e7-8363-679f61a0dacf.png">
+					<aside class="notes">
+						<div>- Source: http://www-personal.umich.edu/~mejn/election/2016/</div>
+					</aside>
+				</section>
+				<section>
+					<h2>Data viz tools</h2>
+					<aside class="notes">
+						<div>- Quick hits </div>
+					</aside>
+				</section>
+				<section>
+					<h3>Excel/Google Sheets</h3>
+					<aside class="notes">
+						<div>- Both have built-in graphing tools</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Google Fusion Tables</h3>
+					<aside class="notes">
+						<div>- Quick and dirty mapping</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Carto</h3>
+					<aside class="notes">
+						<div>- Beautiful, data-centered mapping</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Leaflet.js</h3>
+					<aside class="notes">
+						<div>- JavaScript library for mapping that works well with data</div>
+					</aside>
+				</section>
+				<section>
+					<h3><a href="https://public.tableau.com/en-us/s/download">Tableau</a></h3>
+					<aside class="notes">
+						<div>- Really popular, powerful tool to do data viz</div>
+						<div>- Free level should be more than enough for you</div>
+					</aside>
+				</section>
+				<section>
+					<h3><a href="http://app.rawgraphs.io/">RAW graphics</a></h3>
+					<aside class="notes">
+						<div>- Super easy to use free graphing thing</div>
+					</aside>
+				</section>
+				<section>
+					<h3><a href="https://gionkunz.github.io/chartist-js/">Chartist.js</a></h3>
+					<aside class="notes">
+						<div>- Simple JS charting with zero dependencies</div>
+					</aside>
+				</section>
+				<section>
+					<h3><a href="https://d3js.org/">d3.js</a></h3>
+					<aside class="notes">
+						<div>- Super dense, super powerful charting tool built by guy at NYT</div>
+					</aside>
+				</section>
+				<section>
+					<h3><a href="http://seaborn.pydata.org/index.html">seaborn</a></h3>
+					<aside class="notes">
+						<div>- Python graphing</div>
+					</aside>
+				</section>
+				<!--
+				<section>
+					<h3>foo</h3>
+					<aside class="notes">
+						<div>- bar</div>
+					</aside>
+				</section>
+				-->
+				<section>
+					<h3>Example</h3>
+					<aside class="notes">
+						<div>You're an entrepreneur looking to buy up a big swath of land for a new, secretive venture. Let's just say you need a place to put a lot of servers and Lane County has agreed to give you a deal on taxes if you build here.</div>
+						<div>Because you want to water cool your servers, it would be best to build near a major river. But, you've heard recently about the potential for a massive earthquake and you're a bit paranoid that when "the big one" hits, dams could fail and your new building could be flooded.</div>
+						<div>Your goal is to go check out the U.S. Army Corps of Engineers' 2016 National Inventory of Dams and map out large dams in Lane County.</div>
+						<div>This example will show you how to query a government database, select the data you need and map it. First, we need to go get some data.</div>
+						<div>**Note:** You will once again need access to Google Drive for this example. Instead of Sheets, we're going to use an app called Fusion Tables. I'll explain how to install that below.</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Save this PDF</h3>
+					<h3><a href="http://bit.ly/2gX2wGt">bit.ly/2gX2wGt</a></h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../assets/lib/js/head.min.js"></script>
+		<script src="../../assets/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: '../../assets/plugin/notes/notes.js', async: true },
+					{ src: '../../assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

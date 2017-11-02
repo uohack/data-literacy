@@ -1,0 +1,3 @@
+Data viz notes
+
+Overview: Start with basic types of sharing data, go through free tools, demo.
