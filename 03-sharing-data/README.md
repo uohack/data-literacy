@@ -1,5 +1,9 @@
 *Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!*
 
+[Slides](http://uohack.com/data-literacy/03-sharing-data/slides/)
+[Dam data (cleaned)](https://docs.google.com/spreadsheets/d/1cs2j8PsjwJ9mTS9mDKPCh4RhQL3jkBqE2sNwFfdRgRI/edit?usp=sharing)
+[Example Fusion Table](https://www.google.com/fusiontables/DataSource?docid=17STowQJbALssEYrkBuHM1GOPe07s9l403wTd_hMb)
+
 ## Introduction
 
 As we start every course, here is a simple workflow for basic data analysis.
@@ -91,6 +95,36 @@ A word of caution: Maps can be deceptive. The classic example is county election
 ![screen shot 2017-06-12 at 10 02 12 pm](https://user-images.githubusercontent.com/4853944/27066696-d5f39008-4fba-11e7-8363-679f61a0dacf.png)
 
 Let's go through an example real quick of how I might make a simple map.
+
+# Data viz tools
+
+* Excel/Google Sheets
+  * Both have built-in graphing tools that are simple but effective
+* [Google Fusion Tables](https://support.google.com/fusiontables/answer/2571232?hl=en)
+  * Quick and dirty mapping and Google charts
+  * Everything has Google brand identity
+* [RAW graphics](http://app.rawgraphs.io/)
+  * Super easy to use
+  * Free graphing tool (must export image)
+  * Ability to customize design
+* [Carto](https://carto.com/)
+  * Beautiful, data-centered mapping
+  * CartoCSS allows for a lot of design control
+* [Tableau](https://public.tableau.com/en-us/s/download)
+  * Really popular, powerful tool to do data viz and mapping
+  * Free level should be more than enough for you
+* [Chartist.js](https://gionkunz.github.io/chartist-js/)
+  * Simple JS charting with zero dependencies
+  * Must have basic understanding of JavaScript
+* [Leaflet.js](http://leafletjs.com/)
+  * JavaScript library for mapping that works well with data
+  * Must have basic understanding of JavaScript
+* [d3.js](https://d3js.org/)
+  * Advanced graphing and mapping in JavaScript
+  * Must have advanced JavaScript skills
+* [seaborn](http://seaborn.pydata.org/index.html)
+  * Basic graphing in Python
+  * Modern alternative to matplotlib
 
 ## Example
 
