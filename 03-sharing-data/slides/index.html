@@ -92,6 +92,10 @@
 					<h3>Data viz</h3>
 					<aside class="notes">
 						<div>- Skill in high demand</div>
+						<div>- A TON of different ways to visualize data</div>
+						<div>- All the way from free online tools, to heavy JavaScript</div>
+						<div>- Keep it simple, when you're getting started</div>
+						<div>- Let's talk about some of the different methods of data viz</div>
 					</aside>
 				</section>
 				<section>
@@ -152,13 +156,41 @@
 					<aside class="notes">
 						<div>- If you have data tied to a geography, you may want to map it. This process can be much more difficult than other data visualization methods. For starters, there are a lot of different types of maps.</div>
 						<div>- An example is single point maps, where you are simply plotting points based on latitude and longitude. These are far simpler to create than heat maps.</div>
+						<div>- <b>Geocoding</b></div>
 					</aside>
 				</section>
 				<section>
 					<h3>Maps can be deceptive</h3>
-					<img src="https://user-images.githubusercontent.com/4853944/27066696-d5f39008-4fba-11e7-8363-679f61a0dacf.png">
+					<a href="http://www-personal.umich.edu/~mejn/election/2016/"><img src="https://user-images.githubusercontent.com/4853944/27066696-d5f39008-4fba-11e7-8363-679f61a0dacf.png"></a>
 					<aside class="notes">
 						<div>- Source: http://www-personal.umich.edu/~mejn/election/2016/</div>
+						<div>- Prof from U of Michigan does elections mapping analysis</div>
+						<div>- Map on left doesn't take population density into account so much more red</div>
+						<div>- Map on right is more accurate but harder to read, can you tell who the winner is?</div>
+						<div>- There's a secondary issue with this type of map, doesn't effect electoral college</div>
+						<div>- </div>
+					</aside>
+				</section>
+				<section>
+					<h3>Cartograms</h3>
+					<a href="https://www.washingtonpost.com/graphics/politics/2016-election/how-election-maps-lie/"><img src="https://user-images.githubusercontent.com/4853944/32418407-2aa79b1e-c21e-11e7-9daf-36a1f7720b65.jpg"></a>
+					<aside class="notes">
+						<div>- Source: https://www.washingtonpost.com/graphics/politics/2016-election/how-election-maps-lie/</div>
+						<div>- A lot of media outlets have switched to cartograms in recent years</div>
+					</aside>
+				</section>
+				<section>
+					<h3>Geocoding</h3>
+					<ul>
+						<li><a href="https://www.google.com/maps/place/Knight+Library/@44.0432993,-123.0786153,17.89z/data=!4m5!3m4!1s0x0:0x37502260450c3e9a!8m2!3d44.04332!4d-123.0777301">Get lat long manually via Google Maps</a></li>
+						<li>Free with Fusion Tables</li>
+						<li><a href="https://carto.com/pricing/">Carto: 400 on free tier</a></li>
+						<li><a href="https://geocoding.geo.census.gov/">U.S. Census geocoding</a></li>
+						<li><a href="https://developers.google.com/maps/documentation/geocoding/start">Google geocoding API</a></li>
+						<li><b>Process intensive</b></li>
+					</ul>
+					<aside class="notes">
+						<div>- Right click, what's here</div>
 					</aside>
 				</section>
 				<section>
@@ -169,63 +201,105 @@
 				</section>
 				<section>
 					<h3>Excel/Google Sheets</h3>
+					<ul>
+						<li>Simple to use</li>
+						<li>Built in to spreadsheet</li>
+						<li>Very little customization</li>
+						<li>Demo: <a href="https://docs.google.com/spreadsheets/d/1Nmjl6-LfzxzChKJV6OnghYRNkjlA85PuaAnEJAPkkq4/edit?usp=sharing">bit.ly/2y5OOry</a></li>
+					</ul>
 					<aside class="notes">
 						<div>- Both have built-in graphing tools</div>
 					</aside>
 				</section>
 				<section>
 					<h3>Google Fusion Tables</h3>
-					<p><a href="https://support.google.com/fusiontables/answer/2571232?hl=en">link</a></p>
+					<ul>
+						<li>Graphing and mapping</li>
+						<li>Little customization</li>
+						<li>Free geocoding built in</li>
+						<li>No sharing limits</li>
+						<li><a href="https://support.google.com/fusiontables/answer/2571232?hl=en">Documentation</a></li>
+						<li>Demo later</li>
+					</ul>
 					<aside class="notes">
-						<div>- Quick and dirty mapping</div>
+						<div>- Graphing and easy mapping</div>
+					</aside>
+				</section>
+				<section>
+					<h3>RAW graphics</h3>
+					<ul>
+						<li>Free, super simple graphing</li>
+						<li>Limited customization</li>
+						<li>Must download static file</li>
+						<li><a href="http://app.rawgraphs.io/">Try it out for yourself</a></li>
+					</ul>
+					<aside class="notes">
+						<div>- Super easy to use free graphing thing</div>
+						<div>- Go "publish" Google Sheet</div>
+						<div>- Go to link and plug in information</div>
 					</aside>
 				</section>
 				<section>
 					<h3>Carto</h3>
-					<p><a href="https://carto.com/">link</a></p>
+					<ul>
+						<li>Data-centered mapping</li>
+						<li>Easy to use (upload data set, set style, publish)</li>
+						<li>Heavy customization possible</li>
+						<li>Free tier is limited</li>
+						<li><a href="https://carto.com/">Try it out for yourself</a></li>
+					</ul>
 					<aside class="notes">
 						<div>- Beautiful, data-centered mapping</div>
 					</aside>
 				</section>
 				<section>
-					<h3>Leaflet.js</h3>
-					<p><a href="http://leafletjs.com/">link</a></p>
-					<aside class="notes">
-						<div>- JavaScript library for mapping that works well with data</div>
-					</aside>
-				</section>
-				<section>
 					<h3>Tableau</h3>
-					<p><a href="https://public.tableau.com/en-us/s/download">link</a></p>
+					<ul>
+						<li>Graphing and mapping</li>
+						<li>Free tier limited</li>
+						<li><a href="https://public.tableau.com/en-us/s/download">Try it out for yourself</a></li>
+					</ul>
 					<aside class="notes">
 						<div>- Really popular, powerful tool to do data viz</div>
 						<div>- Free level should be more than enough for you</div>
 					</aside>
 				</section>
 				<section>
-					<h3>RAW graphics</h3>
-					<p><a href="http://app.rawgraphs.io/">link</a></p>
+					<h3>Leaflet.js</h3>
+					<ul>
+						<li>Data mapping with simple JavaScript</li>
+						<li>Need to provide map tiles</li>
+						<li><a href="http://leafletjs.com/">Documentation</a></li>
+					</ul>
 					<aside class="notes">
-						<div>- Super easy to use free graphing thing</div>
+						<div>- JavaScript library for mapping that works well with data</div>
 					</aside>
 				</section>
 				<section>
 					<h3>Chartist.js</h3>
-					<p><a href="https://gionkunz.github.io/chartist-js/">link</a></p>
+					<ul>
+						<li>Graphing with simple JavaScript</li>
+						<li><a href="https://gionkunz.github.io/chartist-js/">Documentation</a></li>
 					<aside class="notes">
 						<div>- Simple JS charting with zero dependencies</div>
 					</aside>
 				</section>
 				<section>
 					<h3>d3.js</h3>
-					<p><a href="https://d3js.org/">link</a></p>
+					<ul>
+						<li>Graphing and mapping with <b>heavy</b> JavaScript</li>
+						<li><a href="https://d3js.org/">Documentation</a></li>
+					</ul>
 					<aside class="notes">
 						<div>- Super dense, super powerful charting tool built by guy at NYT</div>
 					</aside>
 				</section>
 				<section>
 					<h3>seaborn</h3>
-					<p><a href="http://seaborn.pydata.org/index.html">link</a></p>
+					<ul>
+						<li>Graphing in Python</li>
+						<li><a href="http://seaborn.pydata.org/index.html">Documentation</a></li>
+					</ul>
 					<aside class="notes">
 						<div>- Python graphing</div>
 					</aside>
