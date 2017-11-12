@@ -1,5 +1,9 @@
 *Have suggestions or feedback? Please let me know! rob [at] uohack [dot] com or file a pull request!*
 
+#### Note: At the last minute I decided to use Google Colabratory instead of Jupyter. Almost everything is the same, and you can follow along in the Jupyter hosted on Github or on Google [here](https://drive.google.com/file/d/1-lBJ0jjQzwos_iajen8Lstz1TNO3530y/view?usp=sharing).
+
+#### Note: The instructions below might differ from the notebook slightly. There should be comments that help explain the differences, I just don't have time to update the README right now.
+
 ## Introduction
 
 As we start every course, here is a simple workflow for basic data analysis.
@@ -17,7 +21,7 @@ By the end of this course you should:
 
 **Note:** If you do not want to or are not able to actively participate in this course, that is totally fine. I created this course to show you want is possible, not as a step-by-step guide to learning pandas. That said, there are two ways to proceed:
 
-1. You may follow along through the example using a notebook I created and is served by Github [here](https://github.com/uohack/data-literacy/blob/master/04-advanced-analysis/parking.ipynb). For those of you not familiar with command line and Python, this is strongly encouraged. Please do read through the whole course, but do not feel discouraged if you do not fully understand what's going on.
+1. You may follow along through the example using a notebook I created and is served by Github [here](https://github.com/uohack/data-literacy/blob/master/04-advanced-analysis/parking.ipynb) or via Google Colaboratory [here](https://drive.google.com/file/d/1-lBJ0jjQzwos_iajen8Lstz1TNO3530y/view?usp=sharing). For those of you not familiar with command line and Python, this is strongly encouraged. Please do read through the whole course, but do not feel discouraged if you do not fully understand what's going on.
 1. For those of you with command line experience and Python, I have placed enough information below to push you in the right direction. But I do not explain every step from zero to working in a Jupyter notebook. You will need to do some outside reading to get your computer up to speed. I would recommend you go through the tutorial once, reading the notebook via Github (option one) and then come back and try to do it yourself later.
 
 ## Background
@@ -51,7 +55,7 @@ In addition to the budget year, we also know that we'll need to organize the dat
 
 ## Getting started
 
-*You may skip this section if you are not setting up a Jupyter notebook on your computer.*
+*You may skip this section if you are not setting up a Jupyter notebook on your computer. Instead, just used the Google Colaboratory version [here](https://drive.google.com/file/d/1-lBJ0jjQzwos_iajen8Lstz1TNO3530y/view?usp=sharing). (You may need to "Sign up" but you should get access within a few hours.*
 
 If you're following along, here are the basic steps to getting a Jupyter notebook running if you have all the prerequisites installed.
 
