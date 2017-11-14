@@ -1,4 +1,12 @@
-Intro python
+# Welcome
+
+* Notes link - [bit.ly/2ms7Irp](https://github.com/uohack/data-literacy/blob/master/04-advanced-analysis/notes.md)
+* Colaboratory sign up - https://colab.research.google.com
+  * Open beta, takes a few hours for them to accept you
+  * In the meantime you can still view example, but you can't make your own copy to play with
+
+# Intro python
+
 * High-level programming language
   * Easy to write/understand with some basic training
     * There are a ton of open-source tools that people have built for and in Python
@@ -32,8 +40,9 @@ Intro python
   * It's FAST
   * Good documentation
 
-https://drive.google.com/file/d/1-lBJ0jjQzwos_iajen8Lstz1TNO3530y/view?usp=sharing
-Example 
+
+# Example - [answer key](https://drive.google.com/file/d/1-lBJ0jjQzwos_iajen8Lstz1TNO3530y/view?usp=sharing)
+
 * Import pandas as pd
   * This is just some developer shorthand
   * Makes it easier to call it
@@ -56,7 +65,7 @@ Example
   *  Combine ISSUE DATE and ISSUE TIME
   * This allows us to do logic on the values
 * Trim to just FY 15-16
-  * df = df.drop(df[<some boolean condition>].index)
+  * `df = df.drop(df[<some boolean condition>].index)`
   * Then I chain them together to drop before and after in one line
   * Do describe() to double check
 * value_counts()
