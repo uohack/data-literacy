@@ -12,10 +12,11 @@
     * There are a ton of open-source tools that people have built for and in Python
     * These modules can be installed and utilized to perform nearly any task
     * Pandas is one example that we will be using today
+  * [Learn more about Python](https://github.com/uohack/digital-media-boot-camp/blob/gh-pages/programming/01-programming-basics.md)
 * Various ways to run python (work through each with print('this is x'))
   * Terminal (easy)
   * File (easy)
-  * Jupyter Notebook (difficult)
+  * Jupyter Notebook (difficult) - [learn more](http://www.firstpythonnotebook.org/notebook/index.html)
   * Colaboratory (VERY easy)
     * Same as Jupyter but all hosted by Google
     * Virtual machine associated with your account
@@ -38,7 +39,8 @@
   * Handles missing data nicely
   * Handles datetime data nicely
   * It's FAST
-  * Good documentation
+  * Good [documentation](http://pandas.pydata.org/pandas-docs/stable/)
+  * [Learn more](http://www.firstpythonnotebook.org/pandas/index.html)
 
 
 # Example - [answer key](https://drive.google.com/file/d/1-lBJ0jjQzwos_iajen8Lstz1TNO3530y/view?usp=sharing)
@@ -48,6 +50,7 @@
   * Makes it easier to call it
   * Must import or else you don't have access to it
 * Import data
+  * [bit.ly/2yXO5x1](https://raw.githubusercontent.com/uohack/data-literacy/master/04-advanced-analysis/citations.csv)
   * Pandas comes with handy read_csv function
   * Can also give you a quick snapshot
     * All data is an object - Pandas way to say its not a number, didn't automatically create datetime items
