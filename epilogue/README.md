@@ -90,7 +90,7 @@ My best guess is to create fast-paced lessons that start with the basics and qui
 
 I have to take a moment to give credit to teachers everywhere, because I never understood how difficult it is to keep a class current. I created a curriculum in the spring and it was outdated by the fall.
 
-Google's release of [Colaboratory](colab.research.google.com) the week before the final session provides the most striking example of this.
+Google's release of [Colaboratory](https://colab.research.google.com) the week before the final session provides the most striking example of this.
 
 [Jupyter Notebooks](http://jupyter.org/) have been the industry standard for creating sharable, interactive Python notebooks for the past few years. So I created a Jupyter Notebook for the final session to demonstrate [Pandas](https://pandas.pydata.org/) back in the spring.
 
