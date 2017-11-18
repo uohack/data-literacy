@@ -52,16 +52,6 @@ In any case, the scope of the workshop was probably intimidating to the average 
 
 Simplifying the workshop into fewer sessions might help this.
 
-#### Flash vs. substance
-
-In the future, if I do this again, I would create two 1-hour sessions. The first would be an introduction and free, easy tools for students to use. The second would introduce advanced tools like Python or R for students that are comfortable with spreadsheets. Each one of these sessions would consist of quick hit examples, with links to more information.
-
-*NOTE: This is dumb. I think it's important to mention this conflict but I don't think this is the right place.*
-
-One of my big concerns with following the plan above is that I won't provide students with a proper foundation of data literacy. It would be more flash with little substance.
-
-Obviously, it would be much more exciting and keep their attention, but it wouldn't cover the important basics and the ethics I tried to mix in. There has to be a happy medium.
-
 ### Student interest
 
 It seems like the content and structure (lecture, example) were well-received overall.
